@@ -1,0 +1,9 @@
+*.bak
+*~
+generatedNeuroML
+generatedMOOSE
+generatedGENESIS
+generatedNEURON
+simulations
+savedNetworks
+pythonScripts/*.xml
