@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<channelml xmlns="http://morphml.org/channelml/schema"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:meta="http://morphml.org/metadata/schema"
+xsi:schemaLocation="http://morphml.org/channelml/schema  ../../Schemata/v1.7.1/Level2/ChannelML_v1.7.1.xsd"
+units="Physiological Units">
+
+    <meta:notes>ChannelML file containing a single Channel description</meta:notes>
+
+    <ion name="na" charge="1" default_erev="50"/>      <!-- phys units: mV -->
+
+
+    <channel_type name="Na" density="yes">
+
+
+        <meta:notes>Prinz et al. (2003) Na current</meta:notes>
+
+
+
+        <meta:neuronDBref>
+            <meta:modelName>Na channels</meta:modelName>
+            <meta:uri>http://senselab.med.yale.edu/senselab/NeuronDB/channelGene2.htm#table2</meta:uri>
+        </meta:neuronDBref>
+
+
+        <current_voltage_relation>
+            <ohmic ion="na">
+                <conductance default_gmax="500">     <!-- phys units: mS/cm2 -->
+
+                    <gate power="3">
+                        <state name="m" fraction="1"/>
+                    </gate>
+                    <gate power="1">
+                        <state name="h" fraction="1"/>
+                    </gate>
+                </conductance>
+            </ohmic>
+        </current_voltage_relation>
+
+
+        <hh_gate state="m">
+            <transition>
+                <voltage_gate>
+                    <tau>
+                        <generic_equation_hh expr="2.64 - (2.52 / (1 + exp ((v + 120) / (-25))))"/>
+                    </tau>
+                    <inf>
+                        <parameterised_hh type="sigmoid">      <!-- Form of equation: A / (1 + exp(k*(v-d))) -->
+
+                            <parameter name="A" value="1"/>
+                            <parameter name="k" value="-0.1890359"/>
+                            <parameter name="d" value="-25.5"/>
+                        </parameterised_hh>
+                    </inf>
+                </voltage_gate>
+            </transition>
+        </hh_gate>
+
+        <hh_gate state="h">
+            <transition>
+                <voltage_gate>
+                    <tau>
+                        <generic_equation_hh expr="(1.34 / (1 + exp ((v + 62.9) / (-10)))) * (1.5 + (1/(1+ exp((v+34.9)/3.6))))"/>
+                    </tau>
+                    <inf>
+                        <parameterised_hh type="sigmoid">      <!-- Form of equation: A / (1 + exp(k*(v-d))) -->
+
+                            <parameter name="A" value="1"/>
+                            <parameter name="k" value="0.19305"/>
+                            <parameter name="d" value="-48.9"/>
+                        </parameterised_hh>
+                    </inf>
+                </voltage_gate>
+            </transition>
+        </hh_gate>
+
+
+    </channel_type>
+</channelml>

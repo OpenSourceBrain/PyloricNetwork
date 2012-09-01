@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<channelml xmlns="http://morphml.org/channelml/schema"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:meta="http://morphml.org/metadata/schema"
+xsi:schemaLocation="http://morphml.org/channelml/schema  ../../Schemata/v1.7.1/Level2/ChannelML_v1.7.1.xsd" units="Physiological Units">
+
+    <meta:notes>ChannelML file containing a single Channel description</meta:notes>
+
+    <ion name="ca" charge="2" default_erev="125"/>      <!-- phys units: mV -->
+
+
+    <channel_type name="CaS" density="yes">
+
+
+        <meta:notes>Prinz et al. (2003) CaS conductance</meta:notes>
+
+        <meta:authorList>
+            <meta:modelTranslator>
+                <meta:name>Padraig Gleeson</meta:name>
+                <meta:institution>UCL</meta:institution>
+                <meta:email>p.gleeson - at - ucl.ac.uk</meta:email>
+            </meta:modelTranslator>
+        </meta:authorList>
+
+
+
+
+
+        <current_voltage_relation>
+            <ohmic ion="ca">
+                <conductance default_gmax="10">     <!-- phys units: mS/cm2 -->
+
+                    <gate power="3">
+                        <state name="m" fraction="1"/>
+                    </gate>
+                    <gate power="1">
+                        <state name="h" fraction="1"/>
+                    </gate>
+                </conductance>
+            </ohmic>
+        </current_voltage_relation>
+
+
+        <hh_gate state="m">
+            <transition>
+                <voltage_gate>
+                    <tau>
+                        <generic_equation_hh expr="(2.8 + 14 / (exp((v + 27) / 10) + exp ((v + 70) / (-13))))"/>
+                    </tau>
+                    <inf>
+                          <parameterised_hh type="sigmoid">      <!-- Form of equation: A / (1 + exp(k*(v-d))) -->
+                             <parameter name="A" value="1"/>
+                             <parameter name="k" value="-0.12345679"/>
+                             <parameter name="d" value="-33"/>
+                         </parameterised_hh>
+                    </inf>
+                </voltage_gate>
+            </transition>
+        </hh_gate>
+
+        <hh_gate state="h">
+            <transition>
+                <voltage_gate>
+                    <tau>
+                        <generic_equation_hh expr="(120 + 300 / (exp((v + 55) / 9) + exp ((v + 65) / (-16))))"/>
+                    </tau>
+                    <inf>
+                          <parameterised_hh type="sigmoid">      <!-- Form of equation: A / (1 + exp(k*(v-d))) -->
+                             <parameter name="A" value="1"/>
+                             <parameter name="k" value="0.1612903"/>
+                             <parameter name="d" value="-60"/>
+                         </parameterised_hh>
+                    </inf>
+                </voltage_gate>
+            </transition>
+        </hh_gate>
+
+
+    </channel_type>
+</channelml>

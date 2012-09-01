@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<channelml xmlns="http://morphml.org/channelml/schema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:meta="http://morphml.org/metadata/schema"
+    xsi:schemaLocation="http://morphml.org/channelml/schema  ../../../../../NeuroMLValidator/web/NeuroMLFiles/Schemata/v1.7.2/Level2/ChannelML_v1.7.2.xsd"
+    units="Physiological Units">
+
+
+
+    <ion name="k" default_erev="-80" charge="1" role="PermeatedSubstance">
+        <meta:notes>The ion which actually flows through the channel</meta:notes>
+    </ion>
+    <ion name="ca" charge="2" role="ModulatingSubstance">
+        <meta:notes>The channel's conductance of K is dependent on this ion's concentration</meta:notes>
+    </ion>
+
+
+    <channel_type name="KCa" density="yes">
+
+
+        <meta:notes>Prinz et al. (2003) KCa current</meta:notes>
+
+
+
+        <meta:neuronDBref>
+            <meta:modelName>K channels</meta:modelName>
+            <meta:uri>http://senselab.med.yale.edu/senselab/NeuronDB/channelGene2.htm#table3</meta:uri>
+        </meta:neuronDBref>
+
+        <current_voltage_relation>
+            <ohmic ion="k">
+                <conductance default_gmax="25">
+
+                    <gate power="4">
+                        <state name="m" fraction="1"/>
+                    </gate>
+                </conductance>
+            </ohmic>
+        </current_voltage_relation>
+
+
+
+        <hh_gate state="m">
+            <transition>
+                <voltage_conc_gate>
+                    <conc_dependence name="Calcium" ion="ca" variable_name="ca_conc" min_conc="0" max_conc="0.050"/>
+
+                     <tau>
+                         <generic_equation_hh expr="180.6 - (150.2 / (1 + exp ((v + 46) / (-22.7))))"/>
+                     </tau>
+                     <inf>
+                         <generic_equation_hh expr="(ca_conc/(ca_conc + 3e-3)) * (1/(1+exp((v+28.3) / 12.6)))"/>
+                     </inf>
+
+                </voltage_conc_gate>
+            </transition>
+        </hh_gate>
+
+
+
+
+    </channel_type>
+</channelml>
