@@ -1,6 +1,6 @@
-PyloricNetwork
-==============
+Pyloric Pacemaker Network
+=========================
 
-Implementation of the pyloric network of the lobster somatogastric ganglion system of Prinz, Marder, et al.
+Implementation of the pyloric pacemaker network of the crab somatogastric ganglion system of Prinz, Marder, et al.
 
-Not yet stable!! Contact p.gleeson -at- ucl.ac.uk for more details...
+Not yet stable!! See http://www.opensourcebrain.org/projects/pyloricnetwork for more details.
