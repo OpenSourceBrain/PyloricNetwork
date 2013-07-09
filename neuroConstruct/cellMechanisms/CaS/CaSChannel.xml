@@ -10,7 +10,7 @@
         This model was initially described in Turrigiano, G., LeMasson, G., and Marder, E. (1995).
     </meta:notes>
 
-    <channel_type name="CaT">
+    <channel_type name="CaS">
 
         <status value="in_progress">
             <meta:contributor>
