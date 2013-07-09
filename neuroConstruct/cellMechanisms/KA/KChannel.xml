@@ -1,81 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channelml xmlns="http://morphml.org/channelml/schema"
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:meta="http://morphml.org/metadata/schema"
-xsi:schemaLocation="http://morphml.org/channelml/schema  ../../Schemata/v1.6/Level2/ChannelML_v1.6.xsd" units="Physiological Units">
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:meta="http://morphml.org/metadata/schema"
+    xsi:schemaLocation="http://morphml.org/channelml/schema  ../../../../NeuroMLValidator/web/NeuroMLFiles/Schemata/v1.8.0/Level2/ChannelML_v1.8.0.xsd"
+    units="Physiological Units">
 
-    <meta:notes>ChannelML file containing a single Channel description</meta:notes>
+    <meta:notes>ChannelML file containing the description of KA channels from cultured crustacean Stomatogastric Ganglion cells.
+        This model was first described in Turrigiano, G., LeMasson, G., and Marder, E. (1995).
+    </meta:notes>
 
-    <ion name="k" default_erev="-80.0" charge="1"/>          <!-- phys units: mV -->
+    <channel_type name="KA">
 
+        <status value="in_progress">
+            <meta:contributor>
+                <meta:name>Boris Marin</meta:name>
+            </meta:contributor>
+        </status>
 
+        <meta:authorList>
+            <meta:modelAuthor>
+                <meta:name>Astrid A. Prinz</meta:name>
+            </meta:modelAuthor>
+            <meta:modelAuthor>
+                <meta:name>Vatsala Thirumalai</meta:name>
+            </meta:modelAuthor>
+            <meta:modelAuthor>
+                <meta:name>Eve Marder</meta:name>
+            </meta:modelAuthor>
+            <meta:modelTranslator>
+                <meta:name>Padraig Gleeson</meta:name>
+                <meta:institution>UCL</meta:institution>
+            </meta:modelTranslator>
+            <meta:modelTranslator>
+                <meta:name>Boris Marin</meta:name>
+                <meta:email>borismarin -at- gmail.com</meta:email>
+            </meta:modelTranslator>
+        </meta:authorList>
 
-    <channel_type name="KA" density="yes">
+        <meta:publication>
+            <meta:comment> Electrophysiological data comes from this article</meta:comment>
+            <meta:fullTitle>Gina Turrigiano, Gwendal LeMasson, and Eve Marder
+Selective regulation of current densities underlies spontaneous changes in the activity of cultured neurons
+Journal of Neuroscience, 15(5 Pt 1), 3640–52, 1995</meta:fullTitle>
+           <meta:pubmedRef>http://www.ncbi.nlm.nih.gov/pubmed/7538565</meta:pubmedRef>    
+        </meta:publication>
 
+        <meta:publication>
+            <meta:comment> Model transcribed from this article</meta:comment>
+            <meta:fullTitle>Astrid A. Prinz, Vatsala Thirumalai, and Eve  Marder
+The functional consequences of changes in the strength and duration of synaptic inputs to oscillatory neurons
+Journal of Neuroscience, 23(3), 943–54, 2003</meta:fullTitle>
+            <meta:pubmedRef>http://www.ncbi.nlm.nih.gov/pubmed/12574423</meta:pubmedRef>
+        </meta:publication>
 
+        <current_voltage_relation cond_law="ohmic" ion="K" default_gmax="50" default_erev="-80" fixed_erev="yes"> 
 
-        <meta:notes>Prinz et al. (2003) KA conductance</meta:notes>
+        <gate name="m" instances="3">
+            <closed_state id="mc"/>
+            <open_state id="m"/>
 
+            <time_course name="tau" from="mc" to="m" expr_form="generic" expr="23.2 - (20.8 / (1 + exp ((v + 32.9) / (-15.2))))"/>
+            <steady_state name="inf" from="mc" to="m" expr_form="sigmoid" rate="1" scale="-8.7" midpoint="-27.2"/>
+	</gate>
 
-        <current_voltage_relation>
-            <ohmic ion="k">
-                <conductance default_gmax="50">          <!-- phys units: mS/cm2-->
+        <gate name="h" instances="1">
+            <closed_state id="hc"/>
+            <open_state id="h"/>
 
-
-                    <gate power="3">
-                         <state name="m" fraction="1"/>
-                     </gate>
-                     <gate power="1">
-                         <state name="h" fraction="1"/>
-                    </gate>
-                </conductance>
-            </ohmic>
+            <time_course name="tau" from="hc" to="h" expr_form="generic" expr="77.2 - (58.4 / (1 + exp ((v + 38.9) / (-26.5))))"/>
+            <steady_state name="inf" from="hc" to="h" expr_form="sigmoid" rate="1" scale="4.9" midpoint="-56.9"/>
+	</gate>
         </current_voltage_relation>
-
-
-        <hh_gate state="m">
-            <transition>
-                <voltage_gate>
-                    <tau>
-                        <generic_equation_hh expr="23.2 - (20.8 / (1 + exp ((v + 32.9) / (-15.2))))"/>
-                    </tau>
-                    <inf>
-                        <parameterised_hh type="sigmoid">          <!-- Form of equation: A / (1 + exp(k*(v-d))) -->
-
-
-                            <parameter name="A" value="1"/>
-                            <parameter name="k" value="-0.1149425"/>
-                            <parameter name="d" value="-27.2"/>
-                        </parameterised_hh>
-                    </inf>
-                </voltage_gate>
-            </transition>
-        </hh_gate>
-
-        <hh_gate state="h">
-            <transition>
-                <voltage_gate>
-                    <tau>
-                        <generic_equation_hh expr="77.2 - (58.4 / (1 + exp ((v + 38.9) / (-26.5))))"/>
-                    </tau>
-                    <inf>
-                        <parameterised_hh type="sigmoid">          <!-- Form of equation: A / (1 + exp(k*(v-d))) -->
-
-
-                            <parameter name="A" value="1"/>
-                            <parameter name="k" value="0.2040816"/>
-                            <parameter name="d" value="-56.9"/>
-                        </parameterised_hh>
-                    </inf>
-                </voltage_gate>
-            </transition>
-        </hh_gate>
-
-
-
-        <impl_prefs>
-            <table_settings max_v="100" min_v="-100" table_divisions="400"/>
-        </impl_prefs>
-
 
     </channel_type>
 </channelml>
