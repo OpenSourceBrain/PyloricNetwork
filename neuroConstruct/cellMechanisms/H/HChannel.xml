@@ -55,7 +55,7 @@ Journal of Neuroscience, 23(3), 943–54, 2003</meta:fullTitle>
         </meta:publication>
 
         <current_voltage_relation cond_law="ohmic"
-                                  ion="H"
+                                  ion="h"
                                   charge="1"
                                   default_gmax="0.01"
                                   default_erev="-20"

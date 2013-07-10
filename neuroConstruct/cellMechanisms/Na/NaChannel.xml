@@ -54,7 +54,7 @@ Journal of Neuroscience, 23(3), 943–54, 2003</meta:fullTitle>
         </meta:publication>
 
 
-        <current_voltage_relation cond_law="ohmic" ion="Na" default_gmax="200" default_erev="50" fixed_erev="yes"> 
+        <current_voltage_relation cond_law="ohmic" ion="na" default_gmax="200" default_erev="50" fixed_erev="yes"> 
 
         <gate name="m" instances="3">
             <closed_state id="mc"/>

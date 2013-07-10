@@ -57,7 +57,7 @@ Journal of Neuroscience, 23(3), 943–54, 2003</meta:fullTitle>
 
 
         <current_voltage_relation cond_law="ohmic"
-                                  ion="Ca"
+                                  ion="ca"
                                   charge="2"
                                   default_gmax="4"
                                   fixed_erev="no">
