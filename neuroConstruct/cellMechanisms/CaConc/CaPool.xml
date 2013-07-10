@@ -1,36 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<channelml xmlns="http://morphml.org/channelml/schema"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:meta="http://morphml.org/metadata/schema"
-    xsi:schemaLocation="http://morphml.org/channelml/schema   ../../Schemata/v1.7.2/Level2/ChannelML_v1.7.2.xsd"
-    units="SI Units">
+<channelml xmlns="http://morphml.org/channelml/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:meta="http://morphml.org/metadata/schema" xsi:schemaLocation="http://morphml.org/channelml/schema   ../../Schemata/v1.7.2/Level2/ChannelML_v1.7.2.xsd" units="Physiological Units">
 
+    <meta:notes>Calcium pool model, from: Liu, Z., Golowasch, J., Marder, E., and Abbott, L. F. (1998). A Model Neuron with Activity-Dependent Conductances Regulated by Multiple Calcium Sensors. Journal of Neuroscience, 18(7), 2309-2320.</meta:notes>
 
-    <ion name="ca" charge="2" role="SignallingSubstance">
+    <ion name="Ca" charge="2" role="SignallingSubstance">
         <meta:notes>Signifies that the ion is involved in a process which alters its concentration</meta:notes>
     </ion>
 
     <ion_concentration name="CaConc">
 
-
-
         <meta:notes>An expontially decaying pool of calcium</meta:notes>
 
+        <ion_species name="Ca"/>
+       
+            <!-- Calcium buffer described in Liu 1998, A Model Neuron with Activity-Dependent Conductances Regulated by Multiple Calcium Sensors -->
 
-
-        <ion_species>ca</ion_species>
-
-        <decaying_pool_model>
-            <resting_conc>0.05e-3</resting_conc>
-            <decay_constant>0.2</decay_constant>
+        <decaying_pool_model resting_conc="0.05e-11" decay_constant="200">      <!-- that's 0.05micromolar in mol/cm^3 and 200ms -->
 
             <fixed_pool_info>
-                    <phi>4.697e-2</phi>  <!-- Fixed factor, rate of change of conc is Ca current *density* times this...
-                                           Units: mA-1 mM cm2 ms-1-->
-            </fixed_pool_info>
+                <phi>7.48e-5</phi>    <!-- units: mol miliampere/cm^3 -->
 
+            </fixed_pool_info>
         </decaying_pool_model>
 
-
     </ion_concentration>
+
 </channelml>
