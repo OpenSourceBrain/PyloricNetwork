@@ -20,7 +20,7 @@
                 <!-- Calcium buffer described in Liu 1998, A Model Neuron with Activity-Dependent Conductances Regulated by Multiple Calcium Sensors -->
 
 
-        <decaying_pool_model resting_conc="5e-5" decay_constant="200">          <!-- that's 0.05micromolar and 200ms -->
+        <decaying_pool_model resting_conc="5e-5" decay_constant="0.2">          <!-- that's 0.05uM and 200ms -->
 
             <fixed_pool_info>
                 <phi>4.69744e-2</phi>       
