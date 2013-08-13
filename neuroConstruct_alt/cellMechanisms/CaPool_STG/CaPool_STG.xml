@@ -45,7 +45,7 @@
                 <!--<pool_volume_info shell_thickness = "8.4e-8"/>-->
 
 
-            <fixed_pool_info>     <!-- phi = f/tau from the Prinz et al 2003 paper -->
+            <fixed_pool_info phi="74.8e6">     <!-- phi = f/tau from the Prinz et al 2003 paper -->
                 <phi>4.69744e-2</phi>   
             </fixed_pool_info>
      <!-- SI units -->
