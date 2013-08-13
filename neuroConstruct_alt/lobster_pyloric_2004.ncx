@@ -13,11 +13,11 @@ part of NeuroML or any standardised XML specification. -->
 Alternative to Hand-Tuning Conductance-Based Models: Construction and Analysis of Databases of Model Neurons
 Astrid A. Prinz, Cyrus P. Billimoria, and Eve Marder,
 J Neurophysiol 90: 3998–4015, 2003.
-
+ 
 The same cell is used as the basis for 3 cells AB_PD, LP and PY with different channel densities, connected in the pyloric rhythm generator network specified in Fig 3d of:
 Similar network activity from disparate circuit parameters
 Astrid A Prinz, Dirk Bucher &amp; Eve Marder
-Nature Neuroscience, 2004.
+Nature Neuroscience, 2004. 
 
 Converted to neuroConstruct from details in above two papers by Aditya Gilra, NCBS, Bangalore, India.</string>
   </void>
@@ -206,7 +206,7 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
      <string>stomatogastric</string>
     </void>
     <void method="add">
-     <string>AB_PD_NoCaPool</string>
+     <string>AB_PD</string>
     </void>
    </void>
    <void method="get">
@@ -397,7 +397,7 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
    <void method="add">
     <object class="ucl.physiol.neuroconstruct.project.SimPlot">
      <void property="cellGroup">
-      <string>STG_CG</string>
+      <string>AB_PD</string>
      </void>
      <void property="cellNumber">
       <string>0</string>
@@ -574,6 +574,254 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
      </void>
     </object>
    </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
+     <void property="cellGroup">
+      <string>Test_CG</string>
+     </void>
+     <void property="cellNumber">
+      <string>0</string>
+     </void>
+     <void property="graphWindow">
+      <string>GraphWin_1</string>
+     </void>
+     <void property="maxValue">
+      <float>1.0</float>
+     </void>
+     <void property="minValue">
+      <float>0.0</float>
+     </void>
+     <void property="plotAndOrSave">
+      <string>Plot and save</string>
+     </void>
+     <void property="plotReference">
+      <string>Var_4</string>
+     </void>
+     <void property="segmentId">
+      <string>0</string>
+     </void>
+     <void property="valuePlotted">
+      <string>CaS_STG:m</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
+     <void property="cellGroup">
+      <string>Test_CG</string>
+     </void>
+     <void property="cellNumber">
+      <string>0</string>
+     </void>
+     <void property="graphWindow">
+      <string>GraphWin_1</string>
+     </void>
+     <void property="maxValue">
+      <float>1.0</float>
+     </void>
+     <void property="minValue">
+      <float>0.0</float>
+     </void>
+     <void property="plotAndOrSave">
+      <string>Plot and save</string>
+     </void>
+     <void property="plotReference">
+      <string>Var_5</string>
+     </void>
+     <void property="segmentId">
+      <string>0</string>
+     </void>
+     <void property="valuePlotted">
+      <string>CaS_STG:h</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
+     <void property="cellGroup">
+      <string>Test_CG</string>
+     </void>
+     <void property="cellNumber">
+      <string>0</string>
+     </void>
+     <void property="graphWindow">
+      <string>GraphWin_1</string>
+     </void>
+     <void property="maxValue">
+      <float>1.0</float>
+     </void>
+     <void property="minValue">
+      <float>0.0</float>
+     </void>
+     <void property="plotAndOrSave">
+      <string>Plot and save</string>
+     </void>
+     <void property="plotReference">
+      <string>Var_6</string>
+     </void>
+     <void property="segmentId">
+      <string>0</string>
+     </void>
+     <void property="valuePlotted">
+      <string>CaT_STG:m</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
+     <void property="cellGroup">
+      <string>Test_CG</string>
+     </void>
+     <void property="cellNumber">
+      <string>0</string>
+     </void>
+     <void property="graphWindow">
+      <string>GraphWin_1</string>
+     </void>
+     <void property="maxValue">
+      <float>1.0</float>
+     </void>
+     <void property="minValue">
+      <float>0.0</float>
+     </void>
+     <void property="plotAndOrSave">
+      <string>Plot and save</string>
+     </void>
+     <void property="plotReference">
+      <string>Var_7</string>
+     </void>
+     <void property="segmentId">
+      <string>0</string>
+     </void>
+     <void property="valuePlotted">
+      <string>CaT_STG:h</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
+     <void property="cellGroup">
+      <string>Test_CG</string>
+     </void>
+     <void property="cellNumber">
+      <string>0</string>
+     </void>
+     <void property="graphWindow">
+      <string>GraphWin_1</string>
+     </void>
+     <void property="maxValue">
+      <float>1.0</float>
+     </void>
+     <void property="minValue">
+      <float>0.0</float>
+     </void>
+     <void property="plotAndOrSave">
+      <string>Plot and save</string>
+     </void>
+     <void property="plotReference">
+      <string>Var_8</string>
+     </void>
+     <void property="segmentId">
+      <string>0</string>
+     </void>
+     <void property="valuePlotted">
+      <string>Na_STG:m</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
+     <void property="cellGroup">
+      <string>Test_CG</string>
+     </void>
+     <void property="cellNumber">
+      <string>0</string>
+     </void>
+     <void property="graphWindow">
+      <string>GraphWin_1</string>
+     </void>
+     <void property="maxValue">
+      <float>1.0</float>
+     </void>
+     <void property="minValue">
+      <float>0.0</float>
+     </void>
+     <void property="plotAndOrSave">
+      <string>Plot and save</string>
+     </void>
+     <void property="plotReference">
+      <string>Var_9</string>
+     </void>
+     <void property="segmentId">
+      <string>0</string>
+     </void>
+     <void property="valuePlotted">
+      <string>Na_STG:h</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
+     <void property="cellGroup">
+      <string>Test_CG</string>
+     </void>
+     <void property="cellNumber">
+      <string>0</string>
+     </void>
+     <void property="graphWindow">
+      <string>GraphWin_0</string>
+     </void>
+     <void property="maxValue">
+      <float>3.0E-19</float>
+     </void>
+     <void property="minValue">
+      <float>0.0</float>
+     </void>
+     <void property="plotAndOrSave">
+      <string>Plot and save</string>
+     </void>
+     <void property="plotReference">
+      <string>Var_10</string>
+     </void>
+     <void property="segmentId">
+      <string>0</string>
+     </void>
+     <void property="valuePlotted">
+      <string>CaPool_STG:CONC:ca</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
+     <void property="cellGroup">
+      <string>Test_CG</string>
+     </void>
+     <void property="cellNumber">
+      <string>0</string>
+     </void>
+     <void property="graphWindow">
+      <string>GraphWin_5</string>
+     </void>
+     <void property="maxValue">
+      <float>200.0</float>
+     </void>
+     <void property="minValue">
+      <float>0.0</float>
+     </void>
+     <void property="plotAndOrSave">
+      <string>Plot and save</string>
+     </void>
+     <void property="plotReference">
+      <string>Var_11</string>
+     </void>
+     <void property="segmentId">
+      <string>0</string>
+     </void>
+     <void property="valuePlotted">
+      <string>CaS_STG:REV_POT:ca</string>
+     </void>
+    </object>
+   </void>
   </void>
  </object>
  <object class="ucl.physiol.neuroconstruct.project.ProjectProperties"/>
@@ -609,7 +857,7 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
    <float>100.0</float>
   </void>
   <void property="reference">
-   <string>Sim_83</string>
+   <string>Sim_120</string>
   </void>
   <void property="saveCopyGenSimFiles">
    <boolean>true</boolean>
@@ -648,6 +896,31 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
      </void>
      <void property="reference">
       <string>Input_0</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings">
+     <void property="amp">
+      <void property="fixedNum">
+       <float>-1.0</float>
+      </void>
+     </void>
+     <void property="cellGroup">
+      <string>Test_CG</string>
+     </void>
+     <void property="del">
+      <void property="fixedNum">
+       <float>50.0</float>
+      </void>
+     </void>
+     <void property="dur">
+      <void property="numberType">
+       <int>11</int>
+      </void>
+     </void>
+     <void property="reference">
+      <string>Input_1</string>
      </void>
     </object>
    </void>
@@ -799,9 +1072,33 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
       <void method="add">
        <string>Test_CG_v</string>
       </void>
+      <void method="add">
+       <string>Var_10</string>
+      </void>
+      <void method="add">
+       <string>Var_11</string>
+      </void>
+      <void method="add">
+       <string>Var_4</string>
+      </void>
+      <void method="add">
+       <string>Var_5</string>
+      </void>
+      <void method="add">
+       <string>Var_6</string>
+      </void>
+      <void method="add">
+       <string>Var_7</string>
+      </void>
+      <void method="add">
+       <string>Var_8</string>
+      </void>
+      <void method="add">
+       <string>Var_9</string>
+      </void>
      </void>
      <void property="simDuration">
-      <float>1000.0</float>
+      <float>200.0</float>
      </void>
     </object>
    </void>
