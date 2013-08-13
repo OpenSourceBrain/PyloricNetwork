@@ -41,14 +41,14 @@
             <gate name="m" instances="3">
                 <closed_state id="m0"/>
                 <open_state id="m"/>
-                <time_course name="tau" from="m0" to="m" expr_form="generic" expr="43.4-42.6/(1.0+exp((v+68.1)/-20.5))"/>
+                <time_course name="tau" from="m0" to="m" expr_form="generic" expr="43.4 - 42.6/(1.0 + (exp ((v + 68.1)/(-20.5))))"/>
                 <steady_state name="inf" from="m0" to="m" expr_form="sigmoid" rate="1.0" scale="-7.2" midpoint="-27.1"/>
             </gate>
             
             <gate name="h" instances="1">
                 <closed_state id="h0"/>
                 <open_state id="h"/>
-                <time_course name="tau" from="h0" to="h" expr_form="generic" expr="210-179.6/(1.0+exp((v+55)/-16.9))"/>
+                <time_course name="tau" from="h0" to="h" expr_form="generic" expr="210 - 179.6/(1.0 + (exp ((v + 55)/(-16.9))))"/>
                 <steady_state name="inf" from="h0" to="h" expr_form="sigmoid" rate="1.0" scale="5.5" midpoint="-32.1"/>
             </gate>
             

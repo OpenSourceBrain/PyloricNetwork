@@ -47,12 +47,19 @@
                 <open_state id="m"/>
                     <!-- 3 microMolar in ca_conc/(ca_conc+3e-9) -->
 
-                <time_course name="tau" from="m0" to="m" expr_form="generic" expr="180.6-150.2/(1.0+exp((v+46.0)/-22.7))"/>
-                <steady_state name="inf" from="m0" to="m" expr_form="generic" expr="(ca_conc/(ca_conc+3e-9)) * 1.0/(1.0+exp((v+28.3)/-12.6))"/>
+                    <!-- TODO: Remove the need for this!!! Update definition of voltConcDependenceSimple in ChannelML_v1.8.1_GENESIStab.xsl-->
+                <transition name="alpha" from="h0" to="h" expr_form="generic" expr="v" /> <!-- Not actually used below...-->
+                <time_course name="tau" from="m0" to="m" expr_form="generic" expr="180.6 - 150.2/(1.0 + (exp ((v + 46.0)/(-22.7))))"/>
+                <steady_state name="inf" from="m0" to="m" expr_form="generic" expr="(ca_conc/(ca_conc + 3e-9)) * 1.0/(1.0 + (exp ((v + 28.3)/(-12.6))))"/>
             </gate>
                         
         </current_voltage_relation>
         
+        <impl_prefs>
+          <comment>Setting these table divs for direct comparison with original GENESIS scripts</comment>
+          <table_settings max_v="100" min_v="-100" table_divisions="399"/>
+        </impl_prefs>
+
         
     </channel_type>
 </channelml>

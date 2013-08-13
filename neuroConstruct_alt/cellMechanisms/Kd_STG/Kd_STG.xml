@@ -41,7 +41,7 @@
             <gate name="n" instances="4">
                 <closed_state id="n0"/>
                 <open_state id="n"/>
-                <time_course name="tau" from="n0" to="n" expr_form="generic" expr="14.4-12.8/(1.0+exp((v+28.3)/-19.2))"/>
+                <time_course name="tau" from="n0" to="n" expr_form="generic" expr="14.4 - 12.8/(1.0 + (exp ((v + 28.3)/(-19.2))))"/>
                 <steady_state name="inf" from="n0" to="n" expr_form="sigmoid" rate="1.0" scale="-11.8" midpoint="-12.3"/>
             </gate>
                         
