@@ -37,15 +37,15 @@
             <gate name="m" instances="3">
                 <closed_state id="m0"/>
                 <open_state id="m"/>
-                <steady_state name="minf" from="m0" to="m" expr_form="sigmoid" rate="1.0" scale="-5.29" midpoint="-25.5"/>
-                <time_course name="mtau" from="m0" to="m" expr_form="generic" expr="2.64-2.52/(1.0+exp((v+120)/-25))"/>
+                <steady_state name="inf" from="m0" to="m" expr_form="sigmoid" rate="1.0" scale="-5.29" midpoint="-25.5"/>
+                <time_course name="tau" from="m0" to="m" expr_form="generic" expr="2.64-2.52/(1.0+exp((v+120)/-25))"/>
             </gate>
             
             <gate name="h" instances="1">
                 <closed_state id="h0"/>
                 <open_state id="h"/>
-                <steady_state name="hinf" from="h0" to="h" expr_form="sigmoid" rate="1.0" scale="5.18" midpoint="-48.9"/>
-                <time_course name="htau" from="h0" to="h" expr_form="generic" expr="1.34/(1.0+exp((v+62.9)/-10))*(1.5+1.0/(1.0+exp((v+34.9)/3.6)))"/>
+                <steady_state name="inf" from="h0" to="h" expr_form="sigmoid" rate="1.0" scale="5.18" midpoint="-48.9"/>
+                <time_course name="tau" from="h0" to="h" expr_form="generic" expr="1.34/(1.0+exp((v+62.9)/-10))*(1.5+1.0/(1.0+exp((v+34.9)/3.6)))"/>
             </gate>
             
         </current_voltage_relation>

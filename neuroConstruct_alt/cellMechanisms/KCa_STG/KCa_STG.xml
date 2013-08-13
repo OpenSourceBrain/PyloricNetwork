@@ -43,8 +43,8 @@
                 <open_state id="m"/>
                     <!-- 3 microMolar in ca_conc/(ca_conc+3e-9) -->
 
-                <steady_state name="minf" from="m0" to="m" expr_form="generic" expr="(ca_conc/(ca_conc+3e-9)) * 1.0/(1.0+exp((v+28.3)/-12.6))"/>
-                <time_course name="mtau" from="m0" to="m" expr_form="generic" expr="180.6-150.2/(1.0+exp((v+46.0)/-22.7))"/>
+                <steady_state name="inf" from="m0" to="m" expr_form="generic" expr="(ca_conc/(ca_conc+3e-9)) * 1.0/(1.0+exp((v+28.3)/-12.6))"/>
+                <time_course name="tau" from="m0" to="m" expr_form="generic" expr="180.6-150.2/(1.0+exp((v+46.0)/-22.7))"/>
             </gate>
                         
         </current_voltage_relation>

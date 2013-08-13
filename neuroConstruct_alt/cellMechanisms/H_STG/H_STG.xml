@@ -37,8 +37,8 @@
             <gate name="m" instances="1">
                 <closed_state id="m0"/>
                 <open_state id="m"/>
-                <steady_state name="minf" from="m0" to="m" expr_form="sigmoid" rate="1.0" scale="5.5" midpoint="-75.0"/>
-                <time_course name="mtau" from="m0" to="m" expr_form="generic" expr="2.0/(exp((v+169.7)/-11.6)+exp((v-26.7)/14.3))"/>
+                <steady_state name="inf" from="m0" to="m" expr_form="sigmoid" rate="1.0" scale="5.5" midpoint="-75.0"/>
+                <time_course name="tau" from="m0" to="m" expr_form="generic" expr="2.0/(exp((v+169.7)/-11.6)+exp((v-26.7)/14.3))"/>
             </gate>
                         
         </current_voltage_relation>
