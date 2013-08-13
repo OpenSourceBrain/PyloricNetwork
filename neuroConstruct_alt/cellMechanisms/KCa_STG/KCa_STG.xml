@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<channelml xmlns="http://morphml.org/channelml/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:meta="http://morphml.org/metadata/schema" xsi:schemaLocation="http://morphml.org/channelml/schema  http://www.neuroml.org/NeuroMLValidator/NeuroMLFiles/Schemata/v1.8.1/Level2/ChannelML_v1.8.1.xsd" units="Physiological Units">
+<channelml xmlns="http://morphml.org/channelml/schema" 
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+           xmlns:meta="http://morphml.org/metadata/schema" 
+           xsi:schemaLocation="http://morphml.org/channelml/schema  http://www.neuroml.org/NeuroMLValidator/NeuroMLFiles/Schemata/v1.8.1/Level2/ChannelML_v1.8.1.xsd" 
+           units="Physiological Units">
 
     <meta:notes>ChannelML file containing a single Channel description</meta:notes>
 
@@ -43,8 +47,8 @@
                 <open_state id="m"/>
                     <!-- 3 microMolar in ca_conc/(ca_conc+3e-9) -->
 
-                <steady_state name="inf" from="m0" to="m" expr_form="generic" expr="(ca_conc/(ca_conc+3e-9)) * 1.0/(1.0+exp((v+28.3)/-12.6))"/>
                 <time_course name="tau" from="m0" to="m" expr_form="generic" expr="180.6-150.2/(1.0+exp((v+46.0)/-22.7))"/>
+                <steady_state name="inf" from="m0" to="m" expr_form="generic" expr="(ca_conc/(ca_conc+3e-9)) * 1.0/(1.0+exp((v+28.3)/-12.6))"/>
             </gate>
                         
         </current_voltage_relation>

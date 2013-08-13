@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<channelml xmlns="http://morphml.org/channelml/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:meta="http://morphml.org/metadata/schema" xsi:schemaLocation="http://morphml.org/channelml/schema  http://www.neuroml.org/NeuroMLValidator/NeuroMLFiles/Schemata/v1.8.1/Level2/ChannelML_v1.8.1.xsd" units="Physiological Units">
+<channelml xmlns="http://morphml.org/channelml/schema" 
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+           xmlns:meta="http://morphml.org/metadata/schema" 
+           xsi:schemaLocation="http://morphml.org/channelml/schema  http://www.neuroml.org/NeuroMLValidator/NeuroMLFiles/Schemata/v1.8.1/Level2/ChannelML_v1.8.1.xsd" 
+           units="Physiological Units">
 
     <meta:notes>ChannelML file containing a single Channel description</meta:notes>
 
@@ -12,7 +16,9 @@
             </meta:contributor>
         </status>
 
-        <meta:notes> CaS conductance </meta:notes>
+        <meta:notes> CaS conductance 
+                     Nernst,Cout=3e-6,z=2
+        </meta:notes>
         
         <meta:authorList>
             <meta:modelTranslator>
@@ -33,20 +39,19 @@
         </meta:neuronDBref>
         
         <current_voltage_relation cond_law="ohmic" ion="ca" default_erev="120" default_gmax="10" charge="2"> 
-            <meta:notes>Nernst,Cout=3e-6,z=2</meta:notes>
 
             <gate name="m" instances="3">
                 <closed_state id="m0"/>
                 <open_state id="m"/>
-                <steady_state name="inf" from="m0" to="m" expr_form="sigmoid" rate="1.0" scale="-8.1" midpoint="-33.0"/>
                 <time_course name="tau" from="m0" to="m" expr_form="generic" expr="2.8+14/(exp((v+27)/10)+exp((v+70)/-13))"/>
+                <steady_state name="inf" from="m0" to="m" expr_form="sigmoid" rate="1.0" scale="-8.1" midpoint="-33.0"/>
             </gate>
             
             <gate name="h" instances="1">
                 <closed_state id="h0"/>
                 <open_state id="h"/>
-                <steady_state name="inf" from="h0" to="h" expr_form="sigmoid" rate="1.0" scale="6.2" midpoint="-60.0"/>
                 <time_course name="tau" from="h0" to="h" expr_form="generic" expr="120+300/(exp((v+55)/9)+exp((v+65)/-16))"/>
+                <steady_state name="inf" from="h0" to="h" expr_form="sigmoid" rate="1.0" scale="6.2" midpoint="-60.0"/>
             </gate>
             
         </current_voltage_relation>
