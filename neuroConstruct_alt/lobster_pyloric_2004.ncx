@@ -12,7 +12,7 @@ part of NeuroML or any standardised XML specification. -->
    <string>An example Stomatogastric neuron model of lobster from this paper:
 Alternative to Hand-Tuning Conductance-Based Models: Construction and Analysis of Databases of Model Neurons
 Astrid A. Prinz, Cyrus P. Billimoria, and Eve Marder,
-J Neurophysiol 90: 3998–4015, 2003.
+J Neurophysiol 90: 3998–4015, 2003. 
  
 The same cell is used as the basis for 3 cells AB_PD, LP and PY with different channel densities, connected in the pyloric rhythm generator network specified in Fig 3d of:
 Similar network activity from disparate circuit parameters
@@ -824,7 +824,11 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
    </void>
   </void>
  </object>
- <object class="ucl.physiol.neuroconstruct.project.ProjectProperties"/>
+ <object class="ucl.physiol.neuroconstruct.project.ProjectProperties">
+  <void property="preferredSaveFormat">
+   <string>NeuroML v1.8.1 Format</string>
+  </void>
+ </object>
  <object class="ucl.physiol.neuroconstruct.utils.Display3DProperties">
   <void property="antiAliasing">
    <int>1</int>
@@ -847,7 +851,11 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
   </void>
  </object>
  <object class="ucl.physiol.neuroconstruct.neuron.NeuronSettings"/>
- <object class="ucl.physiol.neuroconstruct.genesis.GenesisSettings"/>
+ <object class="ucl.physiol.neuroconstruct.genesis.GenesisSettings">
+  <void property="mooseCompatMode">
+   <boolean>true</boolean>
+  </void>
+ </object>
  <object class="ucl.physiol.neuroconstruct.psics.PsicsSettings"/>
  <object class="ucl.physiol.neuroconstruct.simulation.SimulationParameters">
   <void property="dt">
@@ -857,7 +865,7 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
    <float>100.0</float>
   </void>
   <void property="reference">
-   <string>Sim_120</string>
+   <string>Sim_132</string>
   </void>
   <void property="saveCopyGenSimFiles">
    <boolean>true</boolean>
