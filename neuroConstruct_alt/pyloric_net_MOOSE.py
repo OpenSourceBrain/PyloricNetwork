@@ -4,7 +4,7 @@
 Generate the generatedNeuroML folder and files using neuroConstruct 1.6.1:
 Export NeuroML 1.8.1 Level 3 (not as a single file, but as multiple files).
 make and make install the buildQ branch of MOOSE after checking it out as below:
-svn co https://moose.svn.sourceforge.net/svnroot/moose/moose/branches/buildQ/ moose
+svn co svn://svn.code.sf.net/p/moose/code/moose/branches/buildQ moose
 Finally, run
 python STG_net_hsolve.py
 """
