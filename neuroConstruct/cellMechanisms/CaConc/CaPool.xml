@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<channelml xmlns="http://morphml.org/channelml/schema" 
-           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-           xmlns:meta="http://morphml.org/metadata/schema"
-           xsi:schemaLocation="http://morphml.org/channelml/schema   ../../Schemata/v1.7.2/Level2/ChannelML_v1.7.2.xsd"
-           units="SI Units">
+<channelml xmlns="http://morphml.org/channelml/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:meta="http://morphml.org/metadata/schema" xsi:schemaLocation="http://morphml.org/channelml/schema   ../../Schemata/v1.7.2/Level2/ChannelML_v1.7.2.xsd" units="SI Units">
 
     <meta:notes>Calcium pool model, from: Liu, Z., Golowasch, J., Marder, E., and Abbott, L. F. (1998). A Model Neuron with Activity-Dependent Conductances Regulated by Multiple Calcium Sensors. Journal of Neuroscience, 18(7), 2309-2320.</meta:notes>
 
@@ -17,10 +13,14 @@
 
         <ion_species name="ca"/>
        
-                <!-- Calcium buffer described in Liu 1998, A Model Neuron with Activity-Dependent Conductances Regulated by Multiple Calcium Sensors -->
+                        <!-- Calcium buffer described in Liu 1998, A Model Neuron with Activity-Dependent Conductances Regulated by Multiple Calcium Sensors -->
 
 
-        <decaying_pool_model resting_conc="5e-5" decay_constant="0.2">          <!-- that's 0.05uM and 200ms -->
+
+
+        <decaying_pool_model resting_conc="5e-5" decay_constant="0.2">                  <!-- that's 0.05uM and 200ms -->
+
+
 
             <fixed_pool_info>
                 <phi>4.69744e-2</phi>       

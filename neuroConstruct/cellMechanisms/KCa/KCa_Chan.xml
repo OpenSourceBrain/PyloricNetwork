@@ -68,7 +68,7 @@ Journal of Neuroscience, 23(3), 943–54, 2003</meta:fullTitle>
                 <closed_state id="mc"/>
                 <open_state id="m"/>
                 <time_course name="tau" from="mc" to="m" expr_form="generic" expr="180.6 - (150.2 / (1 + exp ((v + 46) / (-22.7))))"/>
-                <steady_state name="inf" from="mc" to="m" expr_form="generic" expr="(ca_conc/(ca_conc + 3e-3)) * (1/(1+exp((v+28.3) / -12.6)))"/>
+                <steady_state name="inf" from="mc" to="m" expr_form="generic" expr="(ca_conc/(ca_conc + 3e-9)) * (1/(1+exp((v+28.3) / -12.6)))"/>
             </gate>
         </current_voltage_relation>
     </channel_type>
