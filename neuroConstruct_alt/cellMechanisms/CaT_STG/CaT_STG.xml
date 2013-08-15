@@ -19,10 +19,27 @@
         <meta:notes> Ca T-type (low threshold) conductance; Nernst,Cout=3e-6,z=2</meta:notes>
         
         <meta:authorList>
+            <meta:modelAuthor>
+                <meta:name>Astrid A. Prinz</meta:name>
+            </meta:modelAuthor>
+            <meta:modelAuthor>
+                <meta:name>Vatsala Thirumalai</meta:name>
+            </meta:modelAuthor>
+            <meta:modelAuthor>
+                <meta:name>Eve Marder</meta:name>
+            </meta:modelAuthor>
             <meta:modelTranslator>
                 <meta:name>Aditya Gilra</meta:name>
                 <meta:institution>National Centre for Biological Sciences, Bangalore, India.</meta:institution>    
-                <meta:email>adityag - at - ncbs.res.in</meta:email>
+                <meta:email>adityag - at -- ncbs.res.in</meta:email>
+            </meta:modelTranslator>
+            <meta:modelTranslator>
+                <meta:name>Padraig Gleeson</meta:name>
+                <meta:institution>UCL</meta:institution>
+            </meta:modelTranslator>
+            <meta:modelTranslator>
+                <meta:name>Boris Marin</meta:name>
+                <meta:email>borismarin -at- gmail.com</meta:email>
             </meta:modelTranslator>
         </meta:authorList>
 
@@ -30,13 +47,29 @@
             <meta:fullTitle>Alternative to Hand-Tuning Conductance-Based Models: Construction and Analysis of Databases of Model Neurons, Astrid A. Prinz, Cyrus P. Billimoria, and Eve Marder, J Neurophysiol 90: 3998–4015, 2003.</meta:fullTitle>
             <meta:pubmedRef/>
         </meta:publication>
+        
+        <meta:publication>
+            <meta:comment> Electrophysiological data comes from this article</meta:comment>
+            <meta:fullTitle>Gina Turrigiano, Gwendal LeMasson, and Eve Marder
+Selective regulation of current densities underlies spontaneous changes in the activity of cultured neurons
+Journal of Neuroscience, 15(5 Pt 1), 3640–52, 1995</meta:fullTitle>
+           <meta:pubmedRef>http://www.ncbi.nlm.nih.gov/pubmed/7538565</meta:pubmedRef>    
+        </meta:publication>
+
+        <meta:publication>
+            <meta:comment> Model transcribed from this article</meta:comment>
+            <meta:fullTitle>Astrid A. Prinz, Vatsala Thirumalai, and Eve  Marder
+The functional consequences of changes in the strength and duration of synaptic inputs to oscillatory neurons
+Journal of Neuroscience, 23(3), 943–54, 2003</meta:fullTitle>
+            <meta:pubmedRef>http://www.ncbi.nlm.nih.gov/pubmed/12574423</meta:pubmedRef>
+        </meta:publication>
 
         <meta:neuronDBref>
             <meta:modelName>Na channel</meta:modelName>
             <meta:uri/>
         </meta:neuronDBref>
         
-        <current_voltage_relation cond_law="ohmic" ion="ca" default_erev="120" default_gmax="12.5" charge="2">
+        <current_voltage_relation cond_law="ohmic" ion="ca" default_erev="120" default_gmax="12.5" charge="2" fixed_erev="no">
             
             <gate name="m" instances="3">
                 <closed_state id="m0"/>
