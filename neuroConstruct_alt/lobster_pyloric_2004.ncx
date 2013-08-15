@@ -1144,7 +1144,7 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
    <boolean>true</boolean>
   </void>
   <void property="temperature">
-   <float>25.0</float>
+   <float>10.0</float>
   </void>
   <void property="whatToRecord">
    <int>2</int>
