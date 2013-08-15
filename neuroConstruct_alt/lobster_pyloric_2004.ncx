@@ -190,6 +190,15 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
     <void method="add">
      <object class="ucl.physiol.neuroconstruct.project.packing.RandomCellPackingAdapter"/>
     </void>
+    <void method="add">
+     <object class="ucl.physiol.neuroconstruct.project.packing.RandomCellPackingAdapter"/>
+    </void>
+    <void method="add">
+     <object class="ucl.physiol.neuroconstruct.project.packing.RandomCellPackingAdapter"/>
+    </void>
+    <void method="add">
+     <object class="ucl.physiol.neuroconstruct.project.packing.RandomCellPackingAdapter"/>
+    </void>
    </void>
    <void method="get">
     <string>Cell Type</string>
@@ -208,6 +217,15 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
     <void method="add">
      <string>AB_PD</string>
     </void>
+    <void method="add">
+     <string>Pacemaker_Prinz2003JNeurosci</string>
+    </void>
+    <void method="add">
+     <string>Pyloric_Pacemaker_Prinz2003JNeurophys_fig9D</string>
+    </void>
+    <void method="add">
+     <string>Pyloric_Pacemaker_Prinz2003JNeurophys_fig9E</string>
+    </void>
    </void>
    <void method="get">
     <string>Priority</string>
@@ -225,6 +243,15 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
     </void>
     <void method="add">
      <int>6</int>
+    </void>
+    <void method="add">
+     <int>5</int>
+    </void>
+    <void method="add">
+     <int>4</int>
+    </void>
+    <void method="add">
+     <int>3</int>
     </void>
    </void>
    <void method="get">
@@ -269,6 +296,30 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
       <int>255</int>
      </object>
     </void>
+    <void method="add">
+     <object class="java.awt.Color">
+      <int>2</int>
+      <int>64</int>
+      <int>181</int>
+      <int>255</int>
+     </object>
+    </void>
+    <void method="add">
+     <object class="java.awt.Color">
+      <int>147</int>
+      <int>165</int>
+      <int>163</int>
+      <int>255</int>
+     </object>
+    </void>
+    <void method="add">
+     <object class="java.awt.Color">
+      <int>235</int>
+      <int>114</int>
+      <int>161</int>
+      <int>255</int>
+     </object>
+    </void>
    </void>
    <void method="get">
     <string>Region Name</string>
@@ -287,6 +338,15 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
     <void method="add">
      <string>AB_PD</string>
     </void>
+    <void method="add">
+     <string>AB_PD</string>
+    </void>
+    <void method="add">
+     <string>LP</string>
+    </void>
+    <void method="add">
+     <string>PY</string>
+    </void>
    </void>
    <void method="get">
     <string>Cell Group Name</string>
@@ -304,6 +364,15 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
     </void>
     <void method="add">
      <string>Test_CG</string>
+    </void>
+    <void method="add">
+     <string>JNeurosci</string>
+    </void>
+    <void method="add">
+     <string>JNeurophys_fig9D</string>
+    </void>
+    <void method="add">
+     <string>JNeurophys_fig9E</string>
     </void>
    </void>
   </void>
@@ -822,6 +891,214 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
      </void>
     </object>
    </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
+     <void property="cellGroup">
+      <string>Test_CG</string>
+     </void>
+     <void property="cellNumber">
+      <string>0</string>
+     </void>
+     <void property="graphWindow">
+      <string>GraphWin_1</string>
+     </void>
+     <void property="maxValue">
+      <float>1.0</float>
+     </void>
+     <void property="minValue">
+      <float>0.0</float>
+     </void>
+     <void property="plotAndOrSave">
+      <string>Plot and save</string>
+     </void>
+     <void property="plotReference">
+      <string>Var_12</string>
+     </void>
+     <void property="segmentId">
+      <string>0</string>
+     </void>
+     <void property="valuePlotted">
+      <string>Kd_STG:n</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
+     <void property="cellGroup">
+      <string>Test_CG</string>
+     </void>
+     <void property="cellNumber">
+      <string>0</string>
+     </void>
+     <void property="graphWindow">
+      <string>GraphWin_1</string>
+     </void>
+     <void property="maxValue">
+      <float>1.0</float>
+     </void>
+     <void property="minValue">
+      <float>0.0</float>
+     </void>
+     <void property="plotAndOrSave">
+      <string>Plot and save</string>
+     </void>
+     <void property="plotReference">
+      <string>Var_13</string>
+     </void>
+     <void property="segmentId">
+      <string>0</string>
+     </void>
+     <void property="valuePlotted">
+      <string>KA_STG:h</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
+     <void property="cellGroup">
+      <string>Test_CG</string>
+     </void>
+     <void property="cellNumber">
+      <string>0</string>
+     </void>
+     <void property="graphWindow">
+      <string>GraphWin_1</string>
+     </void>
+     <void property="maxValue">
+      <float>1.0</float>
+     </void>
+     <void property="minValue">
+      <float>0.0</float>
+     </void>
+     <void property="plotAndOrSave">
+      <string>Plot and save</string>
+     </void>
+     <void property="plotReference">
+      <string>Var_14</string>
+     </void>
+     <void property="segmentId">
+      <string>0</string>
+     </void>
+     <void property="valuePlotted">
+      <string>KA_STG:m</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
+     <void property="cellGroup">
+      <string>Test_CG</string>
+     </void>
+     <void property="cellNumber">
+      <string>0</string>
+     </void>
+     <void property="graphWindow">
+      <string>GraphWin_1</string>
+     </void>
+     <void property="maxValue">
+      <float>1.0</float>
+     </void>
+     <void property="minValue">
+      <float>0.0</float>
+     </void>
+     <void property="plotAndOrSave">
+      <string>Plot and save</string>
+     </void>
+     <void property="plotReference">
+      <string>Var_15</string>
+     </void>
+     <void property="segmentId">
+      <string>0</string>
+     </void>
+     <void property="valuePlotted">
+      <string>H_STG:m</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
+     <void property="cellGroup">
+      <string>JNeurosci</string>
+     </void>
+     <void property="cellNumber">
+      <string>*</string>
+     </void>
+     <void property="graphWindow">
+      <string>JNeurosci_v</string>
+     </void>
+     <void property="maxValue">
+      <float>50.0</float>
+     </void>
+     <void property="minValue">
+      <float>-90.0</float>
+     </void>
+     <void property="plotAndOrSave">
+      <string>Plot and save</string>
+     </void>
+     <void property="plotReference">
+      <string>JNeurosci_v</string>
+     </void>
+     <void property="segmentId">
+      <string>0</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
+     <void property="cellGroup">
+      <string>JNeurophys_fig9D</string>
+     </void>
+     <void property="cellNumber">
+      <string>*</string>
+     </void>
+     <void property="graphWindow">
+      <string>JNeurophys_fig9D_v</string>
+     </void>
+     <void property="maxValue">
+      <float>50.0</float>
+     </void>
+     <void property="minValue">
+      <float>-90.0</float>
+     </void>
+     <void property="plotAndOrSave">
+      <string>Plot and save</string>
+     </void>
+     <void property="plotReference">
+      <string>JNeurophys_fig9D_v</string>
+     </void>
+     <void property="segmentId">
+      <string>0</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
+     <void property="cellGroup">
+      <string>JNeurophys_fig9E</string>
+     </void>
+     <void property="cellNumber">
+      <string>*</string>
+     </void>
+     <void property="graphWindow">
+      <string>JNeurophys_fig9E_v</string>
+     </void>
+     <void property="maxValue">
+      <float>50.0</float>
+     </void>
+     <void property="minValue">
+      <float>-90.0</float>
+     </void>
+     <void property="plotAndOrSave">
+      <string>Plot and save</string>
+     </void>
+     <void property="plotReference">
+      <string>JNeurophys_fig9E_v</string>
+     </void>
+     <void property="segmentId">
+      <string>0</string>
+     </void>
+    </object>
+   </void>
   </void>
  </object>
  <object class="ucl.physiol.neuroconstruct.project.ProjectProperties">
@@ -851,11 +1128,7 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
   </void>
  </object>
  <object class="ucl.physiol.neuroconstruct.neuron.NeuronSettings"/>
- <object class="ucl.physiol.neuroconstruct.genesis.GenesisSettings">
-  <void property="mooseCompatMode">
-   <boolean>true</boolean>
-  </void>
- </object>
+ <object class="ucl.physiol.neuroconstruct.genesis.GenesisSettings"/>
  <object class="ucl.physiol.neuroconstruct.psics.PsicsSettings"/>
  <object class="ucl.physiol.neuroconstruct.simulation.SimulationParameters">
   <void property="dt">
@@ -865,7 +1138,7 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
    <float>100.0</float>
   </void>
   <void property="reference">
-   <string>Sim_132</string>
+   <string>Sim_159</string>
   </void>
   <void property="saveCopyGenSimFiles">
    <boolean>true</boolean>
@@ -911,7 +1184,7 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
     <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings">
      <void property="amp">
       <void property="fixedNum">
-       <float>-1.0</float>
+       <float>5.0</float>
       </void>
      </void>
      <void property="cellGroup">
@@ -923,6 +1196,9 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
       </void>
      </void>
      <void property="dur">
+      <void property="fixedNum">
+       <float>600.0</float>
+      </void>
       <void property="numberType">
        <int>11</int>
       </void>
@@ -999,7 +1275,7 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
       </void>
      </void>
      <void property="simDuration">
-      <float>4000.0</float>
+      <float>1000.0</float>
      </void>
     </object>
    </void>
@@ -1081,22 +1357,16 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
        <string>Test_CG_v</string>
       </void>
       <void method="add">
-       <string>Var_10</string>
+       <string>Var_12</string>
       </void>
       <void method="add">
-       <string>Var_11</string>
+       <string>Var_13</string>
       </void>
       <void method="add">
-       <string>Var_4</string>
+       <string>Var_14</string>
       </void>
       <void method="add">
-       <string>Var_5</string>
-      </void>
-      <void method="add">
-       <string>Var_6</string>
-      </void>
-      <void method="add">
-       <string>Var_7</string>
+       <string>Var_15</string>
       </void>
       <void method="add">
        <string>Var_8</string>
@@ -1106,7 +1376,39 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
       </void>
      </void>
      <void property="simDuration">
-      <float>200.0</float>
+      <float>1000.0</float>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.project.SimConfig">
+     <void property="cellGroups">
+      <void method="add">
+       <string>JNeurophys_fig9D</string>
+      </void>
+      <void method="add">
+       <string>JNeurophys_fig9E</string>
+      </void>
+      <void method="add">
+       <string>JNeurosci</string>
+      </void>
+     </void>
+     <void property="name">
+      <string>Test3STGcells</string>
+     </void>
+     <void property="plots">
+      <void method="add">
+       <string>JNeurophys_fig9D_v</string>
+      </void>
+      <void method="add">
+       <string>JNeurophys_fig9E_v</string>
+      </void>
+      <void method="add">
+       <string>JNeurosci_v</string>
+      </void>
+     </void>
+     <void property="simDuration">
+      <float>4000.0</float>
      </void>
     </object>
    </void>
