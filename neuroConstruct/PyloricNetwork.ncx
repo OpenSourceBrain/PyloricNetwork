@@ -313,12 +313,7 @@ Prinz, A. A., Billimoria, C. P., &amp; Marder, E. (2003). Alternative to hand-tu
   <void property="nativeBlocks">
    <void method="put">
     <float>1.0</float>
-    <string>forall if (ismembrane(&quot;ca_ion&quot;)) {
-	
-	print &quot;Changing cai in: &quot;, secname()
-	cai = 10e-5
-    }
-</string>
+    <string></string>
    </void>
   </void>
  </object>
