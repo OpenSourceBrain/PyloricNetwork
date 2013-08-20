@@ -37,9 +37,10 @@ simConfigs = []
 
 simConfigs.append("Test")
 
-simDt =                 0.01
+simDt =                 0.005
+simDtOverride =         {"LEMS":0.001}
 
-simulators =            ["NEURON"]
+simulators =            ["NEURON","LEMS","GENESIS_SI","GENESIS_PHYS","MOOSE_SI","MOOSE_PHYS"]
 
 numConcurrentSims =     4
 
@@ -67,6 +68,7 @@ def testAll(argv=None):
 
     simManager.runMultipleSims(simConfigs =           simConfigs,
                                simDt =                simDt,
+                               simDtOverride =        simDtOverride,
                                simulators =           simulators,
                                runInBackground =      runInBackground,
                                varTimestepNeuron =    varTimestepNeuron)
@@ -77,9 +79,9 @@ def testAll(argv=None):
 
     # These were discovered using analyseSims = True above.
     # They need to hold for all simulators
-    spikeTimesToCheck = {'Test_CG_0': [53.99, 68.97, 83.03, 98.03, 114.41, 132.37, 152.0, 173.32, 196.26, 220.68, 246.36, 273.1, 300.79, 329.47, 359.29, 390.54, 423.72, 459.83, 503.03]}
+    spikeTimesToCheck = {'Test_CG_0': [103.459, 137.048, 170.888, 204.999, 239.244, 273.559, 307.912, 342.285, 376.67, 411.06, 445.454, 479.85, 514.247, 548.645, 583.042, 617.44, 651.838, 686.236]}
     
-    spikeTimeAccuracy = 0.1
+    spikeTimeAccuracy = 0.3
 
     report = simManager.checkSims(spikeTimesToCheck = spikeTimesToCheck,
                                   spikeTimeAccuracy = spikeTimeAccuracy)

@@ -215,7 +215,7 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
      <string>stomatogastric</string>
     </void>
     <void method="add">
-     <string>AB_PD</string>
+     <string>AB_PD_NoCa</string>
     </void>
     <void method="add">
      <string>Pacemaker_Prinz2003JNeurosci</string>
@@ -1138,7 +1138,7 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
    <float>100.0</float>
   </void>
   <void property="reference">
-   <string>Sim_159</string>
+   <string>Sim_166</string>
   </void>
   <void property="saveCopyGenSimFiles">
    <boolean>true</boolean>
@@ -1184,7 +1184,7 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
     <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings">
      <void property="amp">
       <void property="fixedNum">
-       <float>5.0</float>
+       <float>4.0</float>
       </void>
      </void>
      <void property="cellGroup">
@@ -1192,7 +1192,7 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
      </void>
      <void property="del">
       <void property="fixedNum">
-       <float>50.0</float>
+       <float>100.0</float>
       </void>
      </void>
      <void property="dur">
@@ -1347,6 +1347,11 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
      <void property="cellGroups">
       <void method="add">
        <string>Test_CG</string>
+      </void>
+     </void>
+     <void property="inputs">
+      <void method="add">
+       <string>Input_1</string>
       </void>
      </void>
      <void property="name">
