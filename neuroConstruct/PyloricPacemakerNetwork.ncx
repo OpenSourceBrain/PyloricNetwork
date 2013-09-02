@@ -215,7 +215,7 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
      <string>stomatogastric</string>
     </void>
     <void method="add">
-     <string>AB_PD_NoCa</string>
+     <string>AB_PD_NoKCa</string>
     </void>
     <void method="add">
      <string>Pacemaker_Prinz2003JNeurosci</string>
@@ -1099,6 +1099,37 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
      </void>
     </object>
    </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
+     <void property="cellGroup">
+      <string>Test_CG</string>
+     </void>
+     <void property="cellNumber">
+      <string>0</string>
+     </void>
+     <void property="graphWindow">
+      <string>GraphWin_0</string>
+     </void>
+     <void property="maxValue">
+      <float>3.0E-19</float>
+     </void>
+     <void property="minValue">
+      <float>0.0</float>
+     </void>
+     <void property="plotAndOrSave">
+      <string>Plot and save</string>
+     </void>
+     <void property="plotReference">
+      <string>Var_16</string>
+     </void>
+     <void property="segmentId">
+      <string>0</string>
+     </void>
+     <void property="valuePlotted">
+      <string>CaPool_STG:CONC:ca</string>
+     </void>
+    </object>
+   </void>
   </void>
  </object>
  <object class="ucl.physiol.neuroconstruct.project.ProjectProperties">
@@ -1132,13 +1163,13 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
  <object class="ucl.physiol.neuroconstruct.psics.PsicsSettings"/>
  <object class="ucl.physiol.neuroconstruct.simulation.SimulationParameters">
   <void property="dt">
-   <float>0.01</float>
+   <float>0.005</float>
   </void>
   <void property="duration">
    <float>100.0</float>
   </void>
   <void property="reference">
-   <string>Sim_166</string>
+   <string>Sim_229</string>
   </void>
   <void property="saveCopyGenSimFiles">
    <boolean>true</boolean>
@@ -1362,6 +1393,9 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
        <string>Test_CG_v</string>
       </void>
       <void method="add">
+       <string>Var_11</string>
+      </void>
+      <void method="add">
        <string>Var_12</string>
       </void>
       <void method="add">
@@ -1374,6 +1408,9 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
        <string>Var_15</string>
       </void>
       <void method="add">
+       <string>Var_16</string>
+      </void>
+      <void method="add">
        <string>Var_8</string>
       </void>
       <void method="add">
@@ -1381,7 +1418,7 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
       </void>
      </void>
      <void property="simDuration">
-      <float>1000.0</float>
+      <float>200.0</float>
      </void>
     </object>
    </void>
