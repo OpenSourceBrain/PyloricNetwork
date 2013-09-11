@@ -1169,7 +1169,7 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
    <float>100.0</float>
   </void>
   <void property="reference">
-   <string>Sim_257</string>
+   <string>Sim_259</string>
   </void>
   <void property="saveCopyGenSimFiles">
    <boolean>true</boolean>
@@ -1581,16 +1581,13 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
          </object>
         </void>
         <void property="synapseType">
-         <string>DoubExpSyn_Glu</string>
+         <string>Glu_AB_LP</string>
         </void>
         <void property="threshold">
          <double>-35.0</double>
         </void>
         <void property="weightsGenerator">
          <object class="ucl.physiol.neuroconstruct.utils.WeightGenerator">
-          <void property="fixedNum">
-           <float>0.6</float>
-          </void>
           <void property="numberType">
            <int>11</int>
           </void>
@@ -1615,16 +1612,13 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
          </object>
         </void>
         <void property="synapseType">
-         <string>DoubExpSyn_Ach</string>
+         <string>Ach_PD_LP</string>
         </void>
         <void property="threshold">
          <double>-35.0</double>
         </void>
         <void property="weightsGenerator">
          <object class="ucl.physiol.neuroconstruct.utils.WeightGenerator">
-          <void property="fixedNum">
-           <float>20.0</float>
-          </void>
           <void property="numberType">
            <int>11</int>
           </void>
@@ -1649,16 +1643,13 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
          </object>
         </void>
         <void property="synapseType">
-         <string>DoubExpSyn_Glu</string>
+         <string>Glu_AB_PY</string>
         </void>
         <void property="threshold">
          <double>-35.0</double>
         </void>
         <void property="weightsGenerator">
          <object class="ucl.physiol.neuroconstruct.utils.WeightGenerator">
-          <void property="fixedNum">
-           <float>0.2</float>
-          </void>
           <void property="numberType">
            <int>11</int>
           </void>
@@ -1683,16 +1674,13 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
          </object>
         </void>
         <void property="synapseType">
-         <string>DoubExpSyn_Ach</string>
+         <string>Ach_PD_PY</string>
         </void>
         <void property="threshold">
          <double>-35.0</double>
         </void>
         <void property="weightsGenerator">
          <object class="ucl.physiol.neuroconstruct.utils.WeightGenerator">
-          <void property="fixedNum">
-           <float>2.0</float>
-          </void>
           <void property="numberType">
            <int>11</int>
           </void>
@@ -1717,16 +1705,13 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
          </object>
         </void>
         <void property="synapseType">
-         <string>DoubExpSyn_Glu</string>
+         <string>Glu_LP_ABPD</string>
         </void>
         <void property="threshold">
          <double>-35.0</double>
         </void>
         <void property="weightsGenerator">
          <object class="ucl.physiol.neuroconstruct.utils.WeightGenerator">
-          <void property="fixedNum">
-           <float>0.5</float>
-          </void>
           <void property="numberType">
            <int>11</int>
           </void>
@@ -1751,16 +1736,13 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
          </object>
         </void>
         <void property="synapseType">
-         <string>DoubExpSyn_Glu</string>
+         <string>Glu_LP_PY</string>
         </void>
         <void property="threshold">
          <double>-35.0</double>
         </void>
         <void property="weightsGenerator">
          <object class="ucl.physiol.neuroconstruct.utils.WeightGenerator">
-          <void property="fixedNum">
-           <float>0.6</float>
-          </void>
           <void property="numberType">
            <int>11</int>
           </void>
@@ -1785,16 +1767,13 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
          </object>
         </void>
         <void property="synapseType">
-         <string>DoubExpSyn_Glu</string>
+         <string>Glu_PY_LP</string>
         </void>
         <void property="threshold">
          <double>-35.0</double>
         </void>
         <void property="weightsGenerator">
          <object class="ucl.physiol.neuroconstruct.utils.WeightGenerator">
-          <void property="fixedNum">
-           <float>2.0</float>
-          </void>
           <void property="numberType">
            <int>11</int>
           </void>

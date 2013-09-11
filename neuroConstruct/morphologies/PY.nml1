@@ -147,11 +147,27 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
             </biophysics>
 
             <connectivity>
+                <net:potential_syn_loc synapse_type="Ach_PD_PY" synapse_direction="preAndOrPost">
+                    <net:group>soma_group</net:group>
+                </net:potential_syn_loc>
+            
                 <net:potential_syn_loc synapse_type="DoubExpSyn_Ach" synapse_direction="preAndOrPost">
                     <net:group>soma_group</net:group>
                 </net:potential_syn_loc>
             
                 <net:potential_syn_loc synapse_type="DoubExpSyn_Glu" synapse_direction="preAndOrPost">
+                    <net:group>soma_group</net:group>
+                </net:potential_syn_loc>
+            
+                <net:potential_syn_loc synapse_type="Glu_AB_PY" synapse_direction="preAndOrPost">
+                    <net:group>soma_group</net:group>
+                </net:potential_syn_loc>
+            
+                <net:potential_syn_loc synapse_type="Glu_LP_PY" synapse_direction="preAndOrPost">
+                    <net:group>soma_group</net:group>
+                </net:potential_syn_loc>
+            
+                <net:potential_syn_loc synapse_type="Glu_PY_LP" synapse_direction="preAndOrPost">
                     <net:group>soma_group</net:group>
                 </net:potential_syn_loc>
             </connectivity>
