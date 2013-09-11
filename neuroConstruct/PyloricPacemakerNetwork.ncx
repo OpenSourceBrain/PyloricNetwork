@@ -17,7 +17,7 @@ J Neurophysiol 90: 3998–4015, 2003.
 The same cell is used as the basis for 3 cells AB_PD, LP and PY with different channel densities, connected in the pyloric rhythm generator network specified in Fig 3d of:
 Similar network activity from disparate circuit parameters
 Astrid A Prinz, Dirk Bucher &amp; Eve Marder
-Nature Neuroscience, 2004. 
+Nature Neuroscience, 2004.  
 
 Converted to neuroConstruct from details in above two papers by Aditya Gilra, NCBS, Bangalore, India.</string>
   </void>
@@ -1169,7 +1169,7 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
    <float>100.0</float>
   </void>
   <void property="reference">
-   <string>Sim_229</string>
+   <string>Sim_252</string>
   </void>
   <void property="saveCopyGenSimFiles">
    <boolean>true</boolean>
@@ -1451,6 +1451,64 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
      </void>
      <void property="simDuration">
       <float>4000.0</float>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.project.SimConfig">
+     <void property="cellGroups">
+      <void method="add">
+       <string>AB_PD</string>
+      </void>
+      <void method="add">
+       <string>LP</string>
+      </void>
+     </void>
+     <void property="name">
+      <string>TestNetwork</string>
+     </void>
+     <void property="netConns">
+      <void method="add">
+       <string>PD_LP</string>
+      </void>
+      <void method="add">
+       <string>PY_LP</string>
+      </void>
+      <void method="add">
+       <string>AB_PY</string>
+      </void>
+      <void method="add">
+       <string>AB_LP</string>
+      </void>
+      <void method="add">
+       <string>LP_PY</string>
+      </void>
+      <void method="add">
+       <string>LP_ABPD</string>
+      </void>
+      <void method="add">
+       <string>PD_PY</string>
+      </void>
+     </void>
+     <void property="plots">
+      <void method="add">
+       <string>AB_PD_v</string>
+      </void>
+      <void method="add">
+       <string>LP_v</string>
+      </void>
+      <void method="add">
+       <string>PY_v</string>
+      </void>
+      <void method="add">
+       <string>STG_CG_v</string>
+      </void>
+      <void method="add">
+       <string>Var_0</string>
+      </void>
+     </void>
+     <void property="simDuration">
+      <float>1000.0</float>
      </void>
     </object>
    </void>
