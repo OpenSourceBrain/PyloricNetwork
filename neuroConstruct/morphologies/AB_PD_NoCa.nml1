@@ -19,8 +19,8 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
             <mml:segments>
 
                 <mml:segment id="0" name="Soma" cable="0">
-                    <mml:proximal x="0.0" y="0.0" z="0.0" diameter="141.4"/>
-                    <mml:distal x="0.0" y="141.4" z="0.0" diameter="141.4"/>
+                    <mml:proximal x="0.0" y="0.0" z="0.0" diameter="141.3855"/>
+                    <mml:distal x="0.0" y="0.0" z="0.0" diameter="141.3855"/>
                 </mml:segment>
 
                 

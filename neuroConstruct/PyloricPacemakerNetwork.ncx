@@ -69,27 +69,11 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
     <void method="add">
      <object class="ucl.physiol.neuroconstruct.project.SphericalRegion">
       <void property="parameterList">
-       <void index="0">
-        <void property="value">
-         <float>300.0</float>
-        </void>
-       </void>
        <void index="1">
         <void property="value">
-         <float>300.0</float>
+         <float>519.615</float>
         </void>
        </void>
-       <void index="3">
-        <void property="value">
-         <float>400.0</float>
-        </void>
-       </void>
-      </void>
-     </object>
-    </void>
-    <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.SphericalRegion">
-      <void property="parameterList">
        <void index="3">
         <void property="value">
          <float>400.0</float>
@@ -103,7 +87,23 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
       <void property="parameterList">
        <void index="0">
         <void property="value">
-         <float>600.0</float>
+         <float>-300.0</float>
+        </void>
+       </void>
+       <void index="3">
+        <void property="value">
+         <float>400.0</float>
+        </void>
+       </void>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="ucl.physiol.neuroconstruct.project.SphericalRegion">
+      <void property="parameterList">
+       <void index="0">
+        <void property="value">
+         <float>300.0</float>
         </void>
        </void>
        <void index="3">
