@@ -1169,7 +1169,7 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
    <float>100.0</float>
   </void>
   <void property="reference">
-   <string>Sim_259</string>
+   <string>Sim_288</string>
   </void>
   <void property="saveCopyGenSimFiles">
    <boolean>true</boolean>
@@ -1391,9 +1391,6 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
      <void property="plots">
       <void method="add">
        <string>Test_CG_v</string>
-      </void>
-      <void method="add">
-       <string>Var_11</string>
       </void>
       <void method="add">
        <string>Var_12</string>
