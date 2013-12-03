@@ -61,30 +61,29 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
 
             <membraneProperties>
 
-                <channelDensity condDensity="100.0 mS_per_cm2" id="Na_STG_all" ionChannel="Na_STG" ion="na" erev="50.0 mV"/>
-
-                <channelDensity condDensity="0.01 mS_per_cm2" id="LeakConductance_all" ionChannel="LeakConductance" erev="-50.0 mV" ion="non_specific">    <!--Note: Units of extra parameters are not known, except if it's e or erev!!-->
-</channelDensity>
-
-                <channelDensity condDensity="125.0 mS_per_cm2" id="Kd_STG_all" ionChannel="Kd_STG" ion="k" erev="-80.0 mV"/>
-
-                <channelDensity condDensity="0.0 mS_per_cm2" id="KCa_STG_all" ionChannel="KCa_STG" ion="k" erev="-80.0 mV"/>
+                <channelDensity condDensity="0.05 mS_per_cm2" id="H_STG_all" ionChannel="H_STG" ion="h" erev="-20.0 mV"/>
 
                 <channelDensity condDensity="50.0 mS_per_cm2" id="KA_STG_all" ionChannel="KA_STG" ion="k" erev="-80.0 mV"/>
 
-                <channelDensity condDensity="0.05 mS_per_cm2" id="H_STG_all" ionChannel="H_STG" ion="h" erev="-20.0 mV"/>
+                <channelDensity condDensity="0.0 mS_per_cm2" id="KCa_STG_all" ionChannel="KCa_STG" ion="k" erev="-80.0 mV"/>
 
-                    <!--Reversal potential for ca in CaS_STG will be calculated by Nernst equation from internal & external calcium-->
+                <channelDensity condDensity="125.0 mS_per_cm2" id="Kd_STG_all" ionChannel="Kd_STG" ion="k" erev="-80.0 mV"/>
 
+                <channelDensity condDensity="0.01 mS_per_cm2" id="LeakConductance_all" ionChannel="LeakConductance" erev="-50.0 mV" ion="non_specific"/>
 
-                <channelDensityNernst condDensity="2.0 mS_per_cm2" id="CaS_STG_all" ionChannel="CaS_STG" ion="ca"/>
-
-                
+                <channelDensity condDensity="100.0 mS_per_cm2" id="Na_STG_all" ionChannel="Na_STG" ion="na" erev="50.0 mV"/>
 
                     <!--Reversal potential for ca in CaT_STG will be calculated by Nernst equation from internal & external calcium-->
 
 
                 <channelDensityNernst condDensity="2.5 mS_per_cm2" id="CaT_STG_all" ionChannel="CaT_STG" ion="ca"/>
+
+                
+
+                    <!--Reversal potential for ca in CaS_STG will be calculated by Nernst equation from internal & external calcium-->
+
+
+                <channelDensityNernst condDensity="2.0 mS_per_cm2" id="CaS_STG_all" ionChannel="CaS_STG" ion="ca"/>
 
                 
 

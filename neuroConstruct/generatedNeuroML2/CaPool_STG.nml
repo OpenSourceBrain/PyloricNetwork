@@ -3,6 +3,6 @@
 
     <notes>Ca pool</notes>
 
-    <fixedFactorConcentrationModel id="CaPool_STG" restingConc="5.0e-5mM" decayConstant="0.2s" ion="ca" phi="74.8e6mol_per_m3_per_A_per_s"/>
+    <fixedFactorConcentrationModel id="CaPool_STG" restingConc="5.0e-5mM" decayConstant="0.2s" ion="ca" rho="4.69744mol_per_m_per_A_per_s"/>
 
 </neuroml>
