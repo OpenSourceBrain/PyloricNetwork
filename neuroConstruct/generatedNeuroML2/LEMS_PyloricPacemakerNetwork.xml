@@ -1,6 +1,6 @@
 <Lems xmlns="http://www.neuroml.org/lems/0.7.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/lems/0.7.2  https://raw.github.com/LEMS/LEMS/development/Schemas/LEMS/LEMS_v0.7.2.xsd">
 
-    <Target component="sim1" reportFile="/home/padraig/neuroConstruct/osb/invertebrate/lobster/PyloricNetwork/neuroConstruct/pythonScripts/../simulations/Sim_288/simulator.props" timesFile="/home/padraig/neuroConstruct/osb/invertebrate/lobster/PyloricNetwork/neuroConstruct/pythonScripts/../simulations/Sim_288/time.dat"/>
+    <Target component="sim1" reportFile="/home/padraig/neuroConstruct/osb/invertebrate/lobster/PyloricNetwork/neuroConstruct/pythonScripts/../simulations/Sim_335/simulator.props" timesFile="/home/padraig/neuroConstruct/osb/invertebrate/lobster/PyloricNetwork/neuroConstruct/pythonScripts/../simulations/Sim_335/time.dat"/>
 
         <!--Include standard NeuroML 2 ComponentType definitions-->
 
@@ -42,17 +42,21 @@
 
         <!--Note: this could be: Simulation id="sim1" ... , but Component type="Simulation" ... 
         is used to allow validation of this file according to the LEMS schema specified above...-->
-    <Component type="Simulation" id="sim1" length="3000.0ms" step="0.005ms" target="network_PyloricPacemakerNetwork">
+    <Component type="Simulation" id="sim1" length="6000.0ms" step="0.005ms" target="network_PyloricPacemakerNetwork">
         
-        <Display id="AB_PD_v" title="PyloricPacemakerNetwork: Default Simulation Configuration, AB_PD, VOLTAGE, VOLTAGE, VOLTAGE" xmin="-300.0" xmax="3300.0" ymin="-104.0" ymax="64.0" timeScale="1ms">
+        <Display id="AB_PD_v" title="PyloricPacemakerNetwork: Default Simulation Configuration, AB_PD, VOLTAGE" xmin="-600.0" xmax="6600.0" ymin="-104.0" ymax="64.0" timeScale="1ms">
             <Line id="VOLTAGE-AB_PD_0" timeScale="1ms" quantity="AB_PD/0/AB_PD/v" scale="1 mV" color="#000000"/>
-        
-            <Line id="VOLTAGE-LP_0" timeScale="1ms" quantity="LP/0/LP/v" scale="1 mV" color="#ff0000"/>
-        
-            <Line id="VOLTAGE-PY_0" timeScale="1ms" quantity="PY/0/PY/v" scale="1 mV" color="#0000ff"/>
         </Display>
     
-        <Display id="GraphWin_0" title="PyloricPacemakerNetwork: Default Simulation Configuration, AB_PD, CaPool_STG:CONC:ca, CaPool_STG:CONC:ca, CaPool_STG:CONC:ca" xmin="-300.0" xmax="3300.0" ymin="-3.0000002E-8" ymax="3.3E-7" timeScale="1ms">
+        <Display id="GraphWin_14" title="PyloricPacemakerNetwork: Default Simulation Configuration, LP, VOLTAGE" xmin="-600.0" xmax="6600.0" ymin="-104.0" ymax="64.0" timeScale="1ms">
+            <Line id="VOLTAGE-LP_0" timeScale="1ms" quantity="LP/0/LP/v" scale="1 mV" color="#000000"/>
+        </Display>
+    
+        <Display id="GraphWin_15" title="PyloricPacemakerNetwork: Default Simulation Configuration, PY, VOLTAGE" xmin="-600.0" xmax="6600.0" ymin="-104.0" ymax="64.0" timeScale="1ms">
+            <Line id="VOLTAGE-PY_0" timeScale="1ms" quantity="PY/0/PY/v" scale="1 mV" color="#000000"/>
+        </Display>
+    
+        <Display id="GraphWin_0" title="PyloricPacemakerNetwork: Default Simulation Configuration, AB_PD, CaPool_STG:CONC:ca, CaPool_STG:CONC:ca, CaPool_STG:CONC:ca" xmin="-600.0" xmax="6600.0" ymin="-3.0000002E-8" ymax="3.3E-7" timeScale="1ms">
             <Line id="CaPool_STG_CONC_ca-AB_PD_0" timeScale="1ms" quantity="AB_PD/0/AB_PD/caConc" scale="1 mol_per_cm3" color="#000000"/>
         
             <Line id="CaPool_STG_CONC_ca-LP_0" timeScale="1ms" quantity="LP/0/LP/caConc" scale="1 mol_per_cm3" color="#ff0000"/>
@@ -60,27 +64,27 @@
             <Line id="CaPool_STG_CONC_ca-PY_0" timeScale="1ms" quantity="PY/0/PY/caConc" scale="1 mol_per_cm3" color="#0000ff"/>
         </Display>
     
-        <OutputFile id="AB_PD_v_OF" fileName="/home/padraig/neuroConstruct/osb/invertebrate/lobster/PyloricNetwork/neuroConstruct/pythonScripts/../simulations/Sim_288/AB_PD_0.dat">
+        <OutputFile id="AB_PD_v_OF" fileName="/home/padraig/neuroConstruct/osb/invertebrate/lobster/PyloricNetwork/neuroConstruct/pythonScripts/../simulations/Sim_335/AB_PD_0.dat">
             <OutputColumn id="v" quantity="AB_PD/0/AB_PD/v"/>
         </OutputFile>
     
-        <OutputFile id="LP_v_OF" fileName="/home/padraig/neuroConstruct/osb/invertebrate/lobster/PyloricNetwork/neuroConstruct/pythonScripts/../simulations/Sim_288/LP_0.dat">
+        <OutputFile id="LP_v_OF" fileName="/home/padraig/neuroConstruct/osb/invertebrate/lobster/PyloricNetwork/neuroConstruct/pythonScripts/../simulations/Sim_335/LP_0.dat">
             <OutputColumn id="v" quantity="LP/0/LP/v"/>
         </OutputFile>
     
-        <OutputFile id="PY_v_OF" fileName="/home/padraig/neuroConstruct/osb/invertebrate/lobster/PyloricNetwork/neuroConstruct/pythonScripts/../simulations/Sim_288/PY_0.dat">
+        <OutputFile id="PY_v_OF" fileName="/home/padraig/neuroConstruct/osb/invertebrate/lobster/PyloricNetwork/neuroConstruct/pythonScripts/../simulations/Sim_335/PY_0.dat">
             <OutputColumn id="v" quantity="PY/0/PY/v"/>
         </OutputFile>
     
-        <OutputFile id="Var_0_OF" fileName="/home/padraig/neuroConstruct/osb/invertebrate/lobster/PyloricNetwork/neuroConstruct/pythonScripts/../simulations/Sim_288/AB_PD_0.CaPool_STG_CONC_ca.dat">
+        <OutputFile id="Var_0_OF" fileName="/home/padraig/neuroConstruct/osb/invertebrate/lobster/PyloricNetwork/neuroConstruct/pythonScripts/../simulations/Sim_335/AB_PD_0.CaPool_STG_CONC_ca.dat">
             <OutputColumn id="caConc" quantity="AB_PD/0/AB_PD/caConc"/>
         </OutputFile>
     
-        <OutputFile id="Var_1_OF" fileName="/home/padraig/neuroConstruct/osb/invertebrate/lobster/PyloricNetwork/neuroConstruct/pythonScripts/../simulations/Sim_288/LP_0.CaPool_STG_CONC_ca.dat">
+        <OutputFile id="Var_1_OF" fileName="/home/padraig/neuroConstruct/osb/invertebrate/lobster/PyloricNetwork/neuroConstruct/pythonScripts/../simulations/Sim_335/LP_0.CaPool_STG_CONC_ca.dat">
             <OutputColumn id="caConc" quantity="LP/0/LP/caConc"/>
         </OutputFile>
     
-        <OutputFile id="Var_2_OF" fileName="/home/padraig/neuroConstruct/osb/invertebrate/lobster/PyloricNetwork/neuroConstruct/pythonScripts/../simulations/Sim_288/PY_0.CaPool_STG_CONC_ca.dat">
+        <OutputFile id="Var_2_OF" fileName="/home/padraig/neuroConstruct/osb/invertebrate/lobster/PyloricNetwork/neuroConstruct/pythonScripts/../simulations/Sim_335/PY_0.CaPool_STG_CONC_ca.dat">
             <OutputColumn id="caConc" quantity="PY/0/PY/caConc"/>
         </OutputFile>
     </Component>

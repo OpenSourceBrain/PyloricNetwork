@@ -109,7 +109,7 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
                 </bio:spec_axial_resistance>
 
                 <bio:init_memb_potential>
-                    <bio:parameter value="-50.0">
+                    <bio:parameter value="-64.0">
                         <bio:group>all</bio:group>
                     </bio:parameter>
                 </bio:init_memb_potential>

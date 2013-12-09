@@ -591,7 +591,7 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
       <string>*</string>
      </void>
      <void property="graphWindow">
-      <string>AB_PD_v</string>
+      <string>GraphWin_14</string>
      </void>
      <void property="maxValue">
       <float>50.0</float>
@@ -619,7 +619,7 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
       <string>*</string>
      </void>
      <void property="graphWindow">
-      <string>AB_PD_v</string>
+      <string>GraphWin_15</string>
      </void>
      <void property="maxValue">
       <float>50.0</float>
@@ -1473,7 +1473,11 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
    </object>
   </void>
  </object>
- <object class="ucl.physiol.neuroconstruct.neuron.NeuronSettings"/>
+ <object class="ucl.physiol.neuroconstruct.neuron.NeuronSettings">
+  <void property="varTimeStep">
+   <boolean>true</boolean>
+  </void>
+ </object>
  <object class="ucl.physiol.neuroconstruct.genesis.GenesisSettings"/>
  <object class="ucl.physiol.neuroconstruct.psics.PsicsSettings"/>
  <object class="ucl.physiol.neuroconstruct.simulation.SimulationParameters">
@@ -1484,7 +1488,7 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
    <float>100.0</float>
   </void>
   <void property="reference">
-   <string>Sim_310</string>
+   <string>Sim_335</string>
   </void>
   <void property="saveCopyGenSimFiles">
    <boolean>true</boolean>
@@ -1590,22 +1594,22 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
        <string>PD_LP</string>
       </void>
       <void method="add">
-       <string>PY_LP</string>
+       <string>LP_ABPD</string>
       </void>
       <void method="add">
        <string>AB_PY</string>
       </void>
       <void method="add">
-       <string>AB_LP</string>
+       <string>PD_PY</string>
       </void>
       <void method="add">
        <string>LP_PY</string>
       </void>
       <void method="add">
-       <string>LP_ABPD</string>
+       <string>PY_LP</string>
       </void>
       <void method="add">
-       <string>PD_PY</string>
+       <string>AB_LP</string>
       </void>
      </void>
      <void property="plots">
@@ -1629,7 +1633,7 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
       </void>
      </void>
      <void property="simDuration">
-      <float>3000.0</float>
+      <float>6000.0</float>
      </void>
     </object>
    </void>
@@ -1839,12 +1843,6 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
        <string>AB_PD_3</string>
       </void>
       <void method="add">
-       <string>LP_2</string>
-      </void>
-      <void method="add">
-       <string>LP_5</string>
-      </void>
-      <void method="add">
        <string>PY_3</string>
       </void>
       <void method="add">
@@ -1853,6 +1851,11 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
      </void>
      <void property="name">
       <string>TestFigure2_2004</string>
+     </void>
+     <void property="netConns">
+      <void method="add">
+       <string>NetConn_AB_PD_PY_3</string>
+      </void>
      </void>
      <void property="plots">
       <void method="add">
@@ -1873,6 +1876,70 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
      </void>
      <void property="simDuration">
       <float>3000.0</float>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.project.SimConfig">
+     <void property="cellGroups">
+      <void method="add">
+       <string>AB_PD</string>
+      </void>
+      <void method="add">
+       <string>LP</string>
+      </void>
+      <void method="add">
+       <string>PY</string>
+      </void>
+     </void>
+     <void property="name">
+      <string>TestE</string>
+     </void>
+     <void property="netConns">
+      <void method="add">
+       <string>NetConn_AB_PD_PY_2</string>
+      </void>
+      <void method="add">
+       <string>NetConn_AB_PD_PY_1</string>
+      </void>
+      <void method="add">
+       <string>NetConn_AB_PD_LP_1</string>
+      </void>
+      <void method="add">
+       <string>NetConn_LP_AB_PD</string>
+      </void>
+      <void method="add">
+       <string>NetConn_LP_PY</string>
+      </void>
+      <void method="add">
+       <string>NetConn_PY_LP</string>
+      </void>
+      <void method="add">
+       <string>NetConn_AB_PD_LP</string>
+      </void>
+     </void>
+     <void property="plots">
+      <void method="add">
+       <string>AB_PD_v</string>
+      </void>
+      <void method="add">
+       <string>LP_v</string>
+      </void>
+      <void method="add">
+       <string>PY_v</string>
+      </void>
+      <void method="add">
+       <string>Var_0</string>
+      </void>
+      <void method="add">
+       <string>Var_1</string>
+      </void>
+      <void method="add">
+       <string>Var_2</string>
+      </void>
+     </void>
+     <void property="simDuration">
+      <float>6000.0</float>
      </void>
     </object>
    </void>
@@ -1906,9 +1973,63 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
     <void method="add">
      <string>NetConn_AB_PD_3_LP_2</string>
     </void>
+    <void method="add">
+     <string>NetConn_AB_PD_PY_3</string>
+    </void>
+    <void method="add">
+     <string>NetConn_AB_PD_PY</string>
+    </void>
+    <void method="add">
+     <string>NetConn_AB_PD_LP</string>
+    </void>
+    <void method="add">
+     <string>NetConn_AB_PD_LP_1</string>
+    </void>
+    <void method="add">
+     <string>NetConn_AB_PD_PY_1</string>
+    </void>
+    <void method="add">
+     <string>NetConn_AB_PD_PY_2</string>
+    </void>
+    <void method="add">
+     <string>NetConn_LP_AB_PD</string>
+    </void>
+    <void method="add">
+     <string>NetConn_LP_PY</string>
+    </void>
+    <void method="add">
+     <string>NetConn_PY_LP</string>
+    </void>
    </void>
    <void method="get">
     <string>AP speed</string>
+    <void method="add">
+     <float>3.4028235E38</float>
+    </void>
+    <void method="add">
+     <float>3.4028235E38</float>
+    </void>
+    <void method="add">
+     <float>3.4028235E38</float>
+    </void>
+    <void method="add">
+     <float>3.4028235E38</float>
+    </void>
+    <void method="add">
+     <float>3.4028235E38</float>
+    </void>
+    <void method="add">
+     <float>3.4028235E38</float>
+    </void>
+    <void method="add">
+     <float>3.4028235E38</float>
+    </void>
+    <void method="add">
+     <float>3.4028235E38</float>
+    </void>
+    <void method="add">
+     <float>3.4028235E38</float>
+    </void>
     <void method="add">
      <float>3.4028235E38</float>
     </void>
@@ -2248,9 +2369,387 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
       </void>
      </object>
     </void>
+    <void method="add">
+     <object class="java.util.Vector">
+      <void method="add">
+       <object class="ucl.physiol.neuroconstruct.project.SynapticProperties">
+        <void property="delayGenerator">
+         <object class="ucl.physiol.neuroconstruct.utils.NumberGenerator" id="NumberGenerator10">
+          <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+           <string>numberType</string>
+           <void method="set">
+            <object idref="NumberGenerator10"/>
+            <int>11</int>
+           </void>
+          </void>
+          <void property="fixedNum">
+           <float>0.0</float>
+          </void>
+         </object>
+        </void>
+        <void property="synapseType">
+         <string>Glu_AB_PY</string>
+        </void>
+        <void property="threshold">
+         <double>-20.0</double>
+        </void>
+        <void property="weightsGenerator">
+         <object class="ucl.physiol.neuroconstruct.utils.WeightGenerator" id="WeightGenerator8">
+          <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+           <string>numberType</string>
+           <void method="set">
+            <object idref="WeightGenerator8"/>
+            <int>11</int>
+           </void>
+          </void>
+         </object>
+        </void>
+       </object>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="java.util.Vector">
+      <void method="add">
+       <object class="ucl.physiol.neuroconstruct.project.SynapticProperties">
+        <void property="delayGenerator">
+         <object class="ucl.physiol.neuroconstruct.utils.NumberGenerator" id="NumberGenerator11">
+          <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+           <string>numberType</string>
+           <void method="set">
+            <object idref="NumberGenerator11"/>
+            <int>11</int>
+           </void>
+          </void>
+          <void property="fixedNum">
+           <float>0.0</float>
+          </void>
+         </object>
+        </void>
+        <void property="synapseType">
+         <string>Glu_AB_PY_30nS</string>
+        </void>
+        <void property="threshold">
+         <double>-20.0</double>
+        </void>
+        <void property="weightsGenerator">
+         <object class="ucl.physiol.neuroconstruct.utils.WeightGenerator" id="WeightGenerator9">
+          <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+           <string>numberType</string>
+           <void method="set">
+            <object idref="WeightGenerator9"/>
+            <int>11</int>
+           </void>
+          </void>
+         </object>
+        </void>
+       </object>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="java.util.Vector">
+      <void method="add">
+       <object class="ucl.physiol.neuroconstruct.project.SynapticProperties">
+        <void property="delayGenerator">
+         <object class="ucl.physiol.neuroconstruct.utils.NumberGenerator" id="NumberGenerator12">
+          <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+           <string>numberType</string>
+           <void method="set">
+            <object idref="NumberGenerator12"/>
+            <int>11</int>
+           </void>
+          </void>
+          <void property="fixedNum">
+           <float>0.0</float>
+          </void>
+         </object>
+        </void>
+        <void property="synapseType">
+         <string>Glu_AB_LP_30nS</string>
+        </void>
+        <void property="threshold">
+         <double>-20.0</double>
+        </void>
+        <void property="weightsGenerator">
+         <object class="ucl.physiol.neuroconstruct.utils.WeightGenerator" id="WeightGenerator10">
+          <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+           <string>numberType</string>
+           <void method="set">
+            <object idref="WeightGenerator10"/>
+            <int>11</int>
+           </void>
+          </void>
+         </object>
+        </void>
+       </object>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="java.util.Vector">
+      <void method="add">
+       <object class="ucl.physiol.neuroconstruct.project.SynapticProperties">
+        <void property="delayGenerator">
+         <object class="ucl.physiol.neuroconstruct.utils.NumberGenerator" id="NumberGenerator13">
+          <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+           <string>numberType</string>
+           <void method="set">
+            <object idref="NumberGenerator13"/>
+            <int>11</int>
+           </void>
+          </void>
+          <void property="fixedNum">
+           <float>0.0</float>
+          </void>
+         </object>
+        </void>
+        <void property="synapseType">
+         <string>Ach_PD_LP_30nS</string>
+        </void>
+        <void property="threshold">
+         <double>-20.0</double>
+        </void>
+        <void property="weightsGenerator">
+         <object class="ucl.physiol.neuroconstruct.utils.WeightGenerator" id="WeightGenerator11">
+          <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+           <string>numberType</string>
+           <void method="set">
+            <object idref="WeightGenerator11"/>
+            <int>11</int>
+           </void>
+          </void>
+         </object>
+        </void>
+       </object>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="java.util.Vector">
+      <void method="add">
+       <object class="ucl.physiol.neuroconstruct.project.SynapticProperties">
+        <void property="delayGenerator">
+         <object class="ucl.physiol.neuroconstruct.utils.NumberGenerator" id="NumberGenerator14">
+          <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+           <string>numberType</string>
+           <void method="set">
+            <object idref="NumberGenerator14"/>
+            <int>11</int>
+           </void>
+          </void>
+          <void property="fixedNum">
+           <float>0.0</float>
+          </void>
+         </object>
+        </void>
+        <void property="synapseType">
+         <string>Ach_PD_PY_3nS</string>
+        </void>
+        <void property="threshold">
+         <double>-20.0</double>
+        </void>
+        <void property="weightsGenerator">
+         <object class="ucl.physiol.neuroconstruct.utils.WeightGenerator" id="WeightGenerator12">
+          <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+           <string>numberType</string>
+           <void method="set">
+            <object idref="WeightGenerator12"/>
+            <int>11</int>
+           </void>
+          </void>
+         </object>
+        </void>
+       </object>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="java.util.Vector">
+      <void method="add">
+       <object class="ucl.physiol.neuroconstruct.project.SynapticProperties">
+        <void property="delayGenerator">
+         <object class="ucl.physiol.neuroconstruct.utils.NumberGenerator" id="NumberGenerator15">
+          <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+           <string>numberType</string>
+           <void method="set">
+            <object idref="NumberGenerator15"/>
+            <int>11</int>
+           </void>
+          </void>
+          <void property="fixedNum">
+           <float>0.0</float>
+          </void>
+         </object>
+        </void>
+        <void property="synapseType">
+         <string>Glu_AB_PY</string>
+        </void>
+        <void property="threshold">
+         <double>-20.0</double>
+        </void>
+        <void property="weightsGenerator">
+         <object class="ucl.physiol.neuroconstruct.utils.WeightGenerator" id="WeightGenerator13">
+          <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+           <string>numberType</string>
+           <void method="set">
+            <object idref="WeightGenerator13"/>
+            <int>11</int>
+           </void>
+          </void>
+         </object>
+        </void>
+       </object>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="java.util.Vector">
+      <void method="add">
+       <object class="ucl.physiol.neuroconstruct.project.SynapticProperties">
+        <void property="delayGenerator">
+         <object class="ucl.physiol.neuroconstruct.utils.NumberGenerator" id="NumberGenerator16">
+          <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+           <string>numberType</string>
+           <void method="set">
+            <object idref="NumberGenerator16"/>
+            <int>11</int>
+           </void>
+          </void>
+          <void property="fixedNum">
+           <float>0.0</float>
+          </void>
+         </object>
+        </void>
+        <void property="synapseType">
+         <string>Glu_LP_ABPD_30nS</string>
+        </void>
+        <void property="threshold">
+         <double>-20.0</double>
+        </void>
+        <void property="weightsGenerator">
+         <object class="ucl.physiol.neuroconstruct.utils.WeightGenerator" id="WeightGenerator14">
+          <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+           <string>numberType</string>
+           <void method="set">
+            <object idref="WeightGenerator14"/>
+            <int>11</int>
+           </void>
+          </void>
+         </object>
+        </void>
+       </object>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="java.util.Vector">
+      <void method="add">
+       <object class="ucl.physiol.neuroconstruct.project.SynapticProperties">
+        <void property="delayGenerator">
+         <object class="ucl.physiol.neuroconstruct.utils.NumberGenerator" id="NumberGenerator17">
+          <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+           <string>numberType</string>
+           <void method="set">
+            <object idref="NumberGenerator17"/>
+            <int>11</int>
+           </void>
+          </void>
+          <void property="fixedNum">
+           <float>0.0</float>
+          </void>
+         </object>
+        </void>
+        <void property="synapseType">
+         <string>Glu_LP_PY_1nS</string>
+        </void>
+        <void property="threshold">
+         <double>-20.0</double>
+        </void>
+        <void property="weightsGenerator">
+         <object class="ucl.physiol.neuroconstruct.utils.WeightGenerator" id="WeightGenerator15">
+          <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+           <string>numberType</string>
+           <void method="set">
+            <object idref="WeightGenerator15"/>
+            <int>11</int>
+           </void>
+          </void>
+         </object>
+        </void>
+       </object>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="java.util.Vector">
+      <void method="add">
+       <object class="ucl.physiol.neuroconstruct.project.SynapticProperties">
+        <void property="delayGenerator">
+         <object class="ucl.physiol.neuroconstruct.utils.NumberGenerator" id="NumberGenerator18">
+          <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+           <string>numberType</string>
+           <void method="set">
+            <object idref="NumberGenerator18"/>
+            <int>11</int>
+           </void>
+          </void>
+          <void property="fixedNum">
+           <float>0.0</float>
+          </void>
+         </object>
+        </void>
+        <void property="synapseType">
+         <string>Glu_PY_LP_30nS</string>
+        </void>
+        <void property="threshold">
+         <double>-20.0</double>
+        </void>
+        <void property="weightsGenerator">
+         <object class="ucl.physiol.neuroconstruct.utils.WeightGenerator" id="WeightGenerator16">
+          <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+           <string>numberType</string>
+           <void method="set">
+            <object idref="WeightGenerator16"/>
+            <int>11</int>
+           </void>
+          </void>
+         </object>
+        </void>
+       </object>
+      </void>
+     </object>
+    </void>
    </void>
    <void method="get">
     <string>Max/min</string>
+    <void method="add">
+     <object class="ucl.physiol.neuroconstruct.project.MaxMinLength"/>
+    </void>
+    <void method="add">
+     <object class="ucl.physiol.neuroconstruct.project.MaxMinLength"/>
+    </void>
+    <void method="add">
+     <object class="ucl.physiol.neuroconstruct.project.MaxMinLength"/>
+    </void>
+    <void method="add">
+     <object class="ucl.physiol.neuroconstruct.project.MaxMinLength"/>
+    </void>
+    <void method="add">
+     <object class="ucl.physiol.neuroconstruct.project.MaxMinLength"/>
+    </void>
+    <void method="add">
+     <object class="ucl.physiol.neuroconstruct.project.MaxMinLength"/>
+    </void>
+    <void method="add">
+     <object class="ucl.physiol.neuroconstruct.project.MaxMinLength"/>
+    </void>
+    <void method="add">
+     <object class="ucl.physiol.neuroconstruct.project.MaxMinLength"/>
+    </void>
+    <void method="add">
+     <object class="ucl.physiol.neuroconstruct.project.MaxMinLength"/>
+    </void>
     <void method="add">
      <object class="ucl.physiol.neuroconstruct.project.MaxMinLength"/>
     </void>
@@ -2366,6 +2865,105 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
       </void>
      </object>
     </void>
+    <void method="add">
+     <object class="ucl.physiol.neuroconstruct.project.SearchPattern" id="SearchPattern8">
+      <void class="ucl.physiol.neuroconstruct.project.SearchPattern" method="getField">
+       <string>type</string>
+       <void method="set">
+        <object idref="SearchPattern8"/>
+        <int>0</int>
+       </void>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="ucl.physiol.neuroconstruct.project.SearchPattern" id="SearchPattern9">
+      <void class="ucl.physiol.neuroconstruct.project.SearchPattern" method="getField">
+       <string>type</string>
+       <void method="set">
+        <object idref="SearchPattern9"/>
+        <int>0</int>
+       </void>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="ucl.physiol.neuroconstruct.project.SearchPattern" id="SearchPattern10">
+      <void class="ucl.physiol.neuroconstruct.project.SearchPattern" method="getField">
+       <string>type</string>
+       <void method="set">
+        <object idref="SearchPattern10"/>
+        <int>0</int>
+       </void>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="ucl.physiol.neuroconstruct.project.SearchPattern" id="SearchPattern11">
+      <void class="ucl.physiol.neuroconstruct.project.SearchPattern" method="getField">
+       <string>type</string>
+       <void method="set">
+        <object idref="SearchPattern11"/>
+        <int>0</int>
+       </void>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="ucl.physiol.neuroconstruct.project.SearchPattern" id="SearchPattern12">
+      <void class="ucl.physiol.neuroconstruct.project.SearchPattern" method="getField">
+       <string>type</string>
+       <void method="set">
+        <object idref="SearchPattern12"/>
+        <int>0</int>
+       </void>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="ucl.physiol.neuroconstruct.project.SearchPattern" id="SearchPattern13">
+      <void class="ucl.physiol.neuroconstruct.project.SearchPattern" method="getField">
+       <string>type</string>
+       <void method="set">
+        <object idref="SearchPattern13"/>
+        <int>0</int>
+       </void>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="ucl.physiol.neuroconstruct.project.SearchPattern" id="SearchPattern14">
+      <void class="ucl.physiol.neuroconstruct.project.SearchPattern" method="getField">
+       <string>type</string>
+       <void method="set">
+        <object idref="SearchPattern14"/>
+        <int>0</int>
+       </void>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="ucl.physiol.neuroconstruct.project.SearchPattern" id="SearchPattern15">
+      <void class="ucl.physiol.neuroconstruct.project.SearchPattern" method="getField">
+       <string>type</string>
+       <void method="set">
+        <object idref="SearchPattern15"/>
+        <int>0</int>
+       </void>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="ucl.physiol.neuroconstruct.project.SearchPattern" id="SearchPattern16">
+      <void class="ucl.physiol.neuroconstruct.project.SearchPattern" method="getField">
+       <string>type</string>
+       <void method="set">
+        <object idref="SearchPattern16"/>
+        <int>0</int>
+       </void>
+      </void>
+     </object>
+    </void>
    </void>
    <void method="get">
     <string>Source</string>
@@ -2393,9 +2991,99 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
     <void method="add">
      <string>AB_PD_3</string>
     </void>
+    <void method="add">
+     <string>AB_PD_3</string>
+    </void>
+    <void method="add">
+     <string>AB_PD</string>
+    </void>
+    <void method="add">
+     <string>AB_PD</string>
+    </void>
+    <void method="add">
+     <string>AB_PD</string>
+    </void>
+    <void method="add">
+     <string>AB_PD</string>
+    </void>
+    <void method="add">
+     <string>AB_PD</string>
+    </void>
+    <void method="add">
+     <string>LP</string>
+    </void>
+    <void method="add">
+     <string>LP</string>
+    </void>
+    <void method="add">
+     <string>PY</string>
+    </void>
    </void>
    <void method="get">
     <string>Connectivity Conditions</string>
+    <void method="add">
+     <object class="ucl.physiol.neuroconstruct.project.ConnectivityConditions">
+      <void property="allowAutapses">
+       <boolean>false</boolean>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="ucl.physiol.neuroconstruct.project.ConnectivityConditions">
+      <void property="allowAutapses">
+       <boolean>false</boolean>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="ucl.physiol.neuroconstruct.project.ConnectivityConditions">
+      <void property="allowAutapses">
+       <boolean>false</boolean>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="ucl.physiol.neuroconstruct.project.ConnectivityConditions">
+      <void property="allowAutapses">
+       <boolean>false</boolean>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="ucl.physiol.neuroconstruct.project.ConnectivityConditions">
+      <void property="allowAutapses">
+       <boolean>false</boolean>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="ucl.physiol.neuroconstruct.project.ConnectivityConditions">
+      <void property="allowAutapses">
+       <boolean>false</boolean>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="ucl.physiol.neuroconstruct.project.ConnectivityConditions">
+      <void property="allowAutapses">
+       <boolean>false</boolean>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="ucl.physiol.neuroconstruct.project.ConnectivityConditions">
+      <void property="allowAutapses">
+       <boolean>false</boolean>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="ucl.physiol.neuroconstruct.project.ConnectivityConditions">
+      <void property="allowAutapses">
+       <boolean>false</boolean>
+      </void>
+     </object>
+    </void>
     <void method="add">
      <object class="ucl.physiol.neuroconstruct.project.ConnectivityConditions">
       <void property="allowAutapses">
@@ -2478,6 +3166,33 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
     </void>
     <void method="add">
      <string>LP_2</string>
+    </void>
+    <void method="add">
+     <string>PY_3</string>
+    </void>
+    <void method="add">
+     <string>PY</string>
+    </void>
+    <void method="add">
+     <string>LP</string>
+    </void>
+    <void method="add">
+     <string>LP</string>
+    </void>
+    <void method="add">
+     <string>PY</string>
+    </void>
+    <void method="add">
+     <string>PY</string>
+    </void>
+    <void method="add">
+     <string>AB_PD</string>
+    </void>
+    <void method="add">
+     <string>PY</string>
+    </void>
+    <void method="add">
+     <string>LP</string>
     </void>
    </void>
   </void>
