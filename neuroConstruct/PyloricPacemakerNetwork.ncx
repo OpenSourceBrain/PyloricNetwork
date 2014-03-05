@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<java version="1.7.0_25" class="java.beans.XMLDecoder">
+<java version="1.7.0_51" class="java.beans.XMLDecoder">
 
 <!-- This is a neuroConstruct project file. It's best to open this
 file with neuroConstruct, as opposed to editing it directly. 
@@ -19,7 +19,7 @@ Similar network activity from disparate circuit parameters
 Astrid A Prinz, Dirk Bucher &amp; Eve Marder
 Nature Neuroscience, 2004.  
 
-Converted to neuroConstruct from details in above two papers by Aditya Gilra, NCBS, Bangalore, India.</string>
+Converted to neuroConstruct from details in above two papers by Aditya Gilra, NCBS, Bangalore, India &amp; Boris Marin, UCL.</string>
   </void>
   <void property="projectFileVersion">
    <string>neuroConstruct v1.7.0</string>
@@ -1473,11 +1473,7 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
    </object>
   </void>
  </object>
- <object class="ucl.physiol.neuroconstruct.neuron.NeuronSettings">
-  <void property="varTimeStep">
-   <boolean>true</boolean>
-  </void>
- </object>
+ <object class="ucl.physiol.neuroconstruct.neuron.NeuronSettings"/>
  <object class="ucl.physiol.neuroconstruct.genesis.GenesisSettings"/>
  <object class="ucl.physiol.neuroconstruct.psics.PsicsSettings"/>
  <object class="ucl.physiol.neuroconstruct.simulation.SimulationParameters">
@@ -1488,7 +1484,7 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
    <float>100.0</float>
   </void>
   <void property="reference">
-   <string>Sim_335</string>
+   <string>Sim_385</string>
   </void>
   <void property="saveCopyGenSimFiles">
    <boolean>true</boolean>
@@ -1633,7 +1629,7 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
       </void>
      </void>
      <void property="simDuration">
-      <float>6000.0</float>
+      <float>1000.0</float>
      </void>
     </object>
    </void>
@@ -1665,7 +1661,7 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
       </void>
      </void>
      <void property="simDuration">
-      <float>3000.0</float>
+      <float>150.0</float>
      </void>
     </object>
    </void>

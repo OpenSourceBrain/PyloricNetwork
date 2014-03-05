@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<neuroml xmlns="http://www.neuroml.org/schema/neuroml2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2  https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta1.xsd" id="LP">
+<neuroml xmlns="http://www.neuroml.org/schema/neuroml2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2  https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta2.xsd" id="LP">
 
-    <include href="CaPool_STG.channel.nml"/>
+    <include href="CaPool_STG.nml"/>
 
     <include href="CaS_STG.channel.nml"/>
 
@@ -40,7 +40,11 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
                 <distal x="0.0" y="0.0" z="0.0" diameter="141.3855"/>
             </segment>
 
-            <segmentGroup id="Soma">
+            <segmentGroup id="Soma" neuroLexId="sao864921383">    <!--
+This group contains an unbranched set of segments, and all of the segmentGroups marked with
+neuroLexId = sao864921383 form a non-overlapping set of all of the segments. 
+These segmentGroups correspond to the 'cables' of NeuroML v1.8.1-->
+
                 <member segment="0"/>
             </segmentGroup>
 
@@ -48,7 +52,8 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
                 <include segmentGroup="Soma"/>
             </segmentGroup>
 
-            <segmentGroup id="soma_group">
+            <segmentGroup id="soma_group" neuroLexId="GO:0043025">    <!--Soma group-->
+
                 <include segmentGroup="Soma"/>
             </segmentGroup>
 
