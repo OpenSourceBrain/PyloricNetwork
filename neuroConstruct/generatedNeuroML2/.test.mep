@@ -1,0 +1,6 @@
+system: Testing default run of 3 cell network
+
+experiments:
+  Default run:
+    expected:
+      spike times: [54.425, 69.8, 84.225, 99.525, 116.25, 134.6, 154.725, 176.675, 200.425, 225.875, 252.825, 281.075, 310.55, 341.35, 373.825, 408.675, 447.6]
