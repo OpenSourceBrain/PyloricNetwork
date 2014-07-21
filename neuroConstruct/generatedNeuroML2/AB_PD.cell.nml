@@ -78,17 +78,17 @@ These segmentGroups correspond to the 'cables' of NeuroML v1.8.1-->
 
                 <channelDensity condDensity="100.0 mS_per_cm2" id="Na_STG_all" ionChannel="Na_STG" ion="na" erev="50.0 mV"/>
 
-                    <!--Reversal potential for ca in CaT_STG will be calculated by Nernst equation from internal & external calcium-->
-
-
-                <channelDensityNernst condDensity="2.5 mS_per_cm2" id="CaT_STG_all" ionChannel="CaT_STG" ion="ca"/>
-
-                
-
                     <!--Reversal potential for ca in CaS_STG will be calculated by Nernst equation from internal & external calcium-->
 
 
                 <channelDensityNernst condDensity="6.0 mS_per_cm2" id="CaS_STG_all" ionChannel="CaS_STG" ion="ca"/>
+
+                
+
+                    <!--Reversal potential for ca in CaT_STG will be calculated by Nernst equation from internal & external calcium-->
+
+
+                <channelDensityNernst condDensity="2.5 mS_per_cm2" id="CaT_STG_all" ionChannel="CaT_STG" ion="ca"/>
 
                 
 

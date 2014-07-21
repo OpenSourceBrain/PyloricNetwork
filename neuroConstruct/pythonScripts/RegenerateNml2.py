@@ -17,15 +17,23 @@ projFile = File(os.getcwd(), "../PyloricPacemakerNetwork.ncx")
 simConfigs = []
 simConfigs.append("Default Simulation Configuration")
 
-nc.generateNeuroML2(projFile, simConfigs)
 
-extra_files = ['.test.omt', '.test.mep']
-if len(sys.argv)==2 and sys.argv[1] == "-f":
-    extra_files.append('LEMS_PyloricPacemakerNetwork.xml')
-    extra_files.append('PyloricPacemakerNetwork.net.nml')
+if len(sys.argv)==2 and sys.argv[1] == "-v1":
     
-from subprocess import call
-for f in extra_files:
-    call(["git", "checkout", "../generatedNeuroML2/%s"%f])
+    print("Generating NeuroML v1.8.1 files...")
+    nc.generateNeuroML1(projFile, simConfigs)
+    
+else:
+    
+    nc.generateNeuroML2(projFile, simConfigs)
+
+    extra_files = ['.test.omt', '.test.mep']
+    if len(sys.argv)==2 and sys.argv[1] == "-f":
+        extra_files.append('LEMS_PyloricPacemakerNetwork.xml')
+        extra_files.append('PyloricPacemakerNetwork.net.nml')
+
+    from subprocess import call
+    for f in extra_files:
+        call(["git", "checkout", "../generatedNeuroML2/%s"%f])
 
 quit()

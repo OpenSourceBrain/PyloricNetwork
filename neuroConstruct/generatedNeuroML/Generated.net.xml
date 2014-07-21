@@ -3,7 +3,7 @@
 
     <meta:notes>
 
-Network structure (NeuroML 1.x) for project: PyloricPacemakerNetwork saved with neuroConstruct v1.7.1 on: 11:59:08, 23-Jun-14
+Network structure (NeuroML 1.x) for project: PyloricPacemakerNetwork saved with neuroConstruct v1.7.1 on: 19:24:38, 17-Jul-14
 
 Cell Group: AB_PD contains 1 cells
 Cell Group: PY contains 1 cells
@@ -21,7 +21,7 @@ Network connection: PD_PY contains 1 individual synaptic connections
     </meta:notes>
 
 <meta:properties>
-    <meta:property tag="neuroConstruct_random_seed" value="1994881346"/>
+    <meta:property tag="neuroConstruct_random_seed" value="1234"/>
 
     <meta:property tag="neuroConstruct_sim_config" value="Default Simulation Configuration"/>
 
@@ -67,9 +67,9 @@ Network connection: PD_PY contains 1 individual synaptic connections
 
 
 
-        <projections units="SI Units">
+        <projections units="Physiological Units">
     <projection name="PD_LP" source="AB_PD" target="LP">
-        <synapse_props synapse_type="Ach_PD_LP" internal_delay="0.0" weight="1.0" threshold="-0.035">
+        <synapse_props synapse_type="Ach_PD_LP" internal_delay="0.0" weight="1.0" threshold="-35.0">
         </synapse_props>
         <connections size="1">
             <connection id="0" pre_cell_id="0" post_cell_id="0">
@@ -77,7 +77,7 @@ Network connection: PD_PY contains 1 individual synaptic connections
         </connections>
     </projection>
     <projection name="PY_LP" source="PY" target="LP">
-        <synapse_props synapse_type="Glu_PY_LP" internal_delay="0.0" weight="1.0" threshold="-0.035">
+        <synapse_props synapse_type="Glu_PY_LP" internal_delay="0.0" weight="1.0" threshold="-35.0">
         </synapse_props>
         <connections size="1">
             <connection id="0" pre_cell_id="0" post_cell_id="0">
@@ -85,7 +85,7 @@ Network connection: PD_PY contains 1 individual synaptic connections
         </connections>
     </projection>
     <projection name="AB_PY" source="AB_PD" target="PY">
-        <synapse_props synapse_type="Glu_AB_PY" internal_delay="0.0" weight="1.0" threshold="-0.035">
+        <synapse_props synapse_type="Glu_AB_PY" internal_delay="0.0" weight="1.0" threshold="-35.0">
         </synapse_props>
         <connections size="1">
             <connection id="0" pre_cell_id="0" post_cell_id="0">
@@ -93,7 +93,7 @@ Network connection: PD_PY contains 1 individual synaptic connections
         </connections>
     </projection>
     <projection name="AB_LP" source="AB_PD" target="LP">
-        <synapse_props synapse_type="Glu_AB_LP" internal_delay="0.0" weight="1.0" threshold="-0.035">
+        <synapse_props synapse_type="Glu_AB_LP" internal_delay="0.0" weight="1.0" threshold="-35.0">
         </synapse_props>
         <connections size="1">
             <connection id="0" pre_cell_id="0" post_cell_id="0">
@@ -101,7 +101,7 @@ Network connection: PD_PY contains 1 individual synaptic connections
         </connections>
     </projection>
     <projection name="LP_PY" source="LP" target="PY">
-        <synapse_props synapse_type="Glu_LP_PY" internal_delay="0.0" weight="1.0" threshold="-0.035">
+        <synapse_props synapse_type="Glu_LP_PY" internal_delay="0.0" weight="1.0" threshold="-35.0">
         </synapse_props>
         <connections size="1">
             <connection id="0" pre_cell_id="0" post_cell_id="0">
@@ -109,7 +109,7 @@ Network connection: PD_PY contains 1 individual synaptic connections
         </connections>
     </projection>
     <projection name="LP_ABPD" source="LP" target="AB_PD">
-        <synapse_props synapse_type="Glu_LP_ABPD" internal_delay="0.0" weight="1.0" threshold="-0.035">
+        <synapse_props synapse_type="Glu_LP_ABPD" internal_delay="0.0" weight="1.0" threshold="-35.0">
         </synapse_props>
         <connections size="1">
             <connection id="0" pre_cell_id="0" post_cell_id="0">
@@ -117,7 +117,7 @@ Network connection: PD_PY contains 1 individual synaptic connections
         </connections>
     </projection>
     <projection name="PD_PY" source="AB_PD" target="PY">
-        <synapse_props synapse_type="Ach_PD_PY" internal_delay="0.0" weight="1.0" threshold="-0.035">
+        <synapse_props synapse_type="Ach_PD_PY" internal_delay="0.0" weight="1.0" threshold="-35.0">
         </synapse_props>
         <connections size="1">
             <connection id="0" pre_cell_id="0" post_cell_id="0">
