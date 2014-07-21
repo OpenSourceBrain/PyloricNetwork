@@ -31,3 +31,5 @@ J Neurophysiol 90: 3998–4015, 2003.
 The same cell is used as the basis for 3 cells AB_PD, LP and PY with different channel densities,
  connected in the pyloric rhythm generator network specified in Fig 3d of Prinz, Bucher and Marder, 2004 above.
 Differences from the original model: Synapses are thresholded rather than graded.
+
+[![Build Status](https://travis-ci.org/OpenSourceBrain/PyloricNetwork.svg?branch=master)](https://travis-ci.org/OpenSourceBrain/PyloricNetwork)
