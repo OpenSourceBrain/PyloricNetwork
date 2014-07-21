@@ -1,3 +1,4 @@
+/neuroConstruct/generatedNeuroML2/clean.sh
 /neuroConstruct/wor*
 
 /neuroConstruct/generatedNeuroML2/*.dat
