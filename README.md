@@ -15,7 +15,7 @@ This project contains a neuroConstruct project which generates a version of the 
 - [NeuroML v2beta2](https://github.com/OpenSourceBrain/PyloricNetwork/tree/master/neuroConstruct/generatedNeuroML2)
 
 
-This is based on work by Aditya Gilra, Boris Marin and Padriag Gleeson
+This is based on work by Aditya Gilra, Boris Marin and Padriag Gleeson.  A unified version of the neuroConstruct model is in the top level [neuroConstruct](https://github.com/OpenSourceBrain/PyloricNetwork/tree/master/neuroConstruct) folder.
 
 ----------------------------------
 
