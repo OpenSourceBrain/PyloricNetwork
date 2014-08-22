@@ -11,10 +11,16 @@
 /neuroConstruct/generatedNeuroML2/*.log
 *.bak
 *~
+neuroConstruct/generatedNeuroML/README
+temp
+
 generatedMOOSE
 generatedGENESIS
 generatedNEURON
 simulations
 savedNetworks
+
+AdityaGilraMOOSEnC/generatedNeuroML/
+
 pythonScripts/*.xml
 neuroConstruct*old
