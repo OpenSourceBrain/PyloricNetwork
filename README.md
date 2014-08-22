@@ -8,14 +8,14 @@ details.
 
 This project contains a neuroConstruct project which generates a version of the pyloric pacemaker model. The channel models have been converted to ChannelML and the network can be exported to:
 
-- NeuroML v1.8.1
+- [NeuroML v1.8.1](https://github.com/OpenSourceBrain/PyloricNetwork/tree/master/neuroConstruct/generatedNeuroML)
 - NEURON
 - GENESIS
 - MOOSE
-- NeuroML v2beta2
+- [NeuroML v2beta2](https://github.com/OpenSourceBrain/PyloricNetwork/tree/master/neuroConstruct/generatedNeuroML2)
+
 
 This is based on work by Aditya Girla, Boris Marin and Padriag Gleeson
-
 
 ----------------------------------
 
