@@ -15,12 +15,12 @@ This project contains a neuroConstruct project which generates a version of the 
 - [NeuroML v2beta2](https://github.com/OpenSourceBrain/PyloricNetwork/tree/master/neuroConstruct/generatedNeuroML2)
 
 
-This is based on work by Aditya Girla, Boris Marin and Padriag Gleeson
+This is based on work by Aditya Gilra, Boris Marin and Padriag Gleeson
 
 ----------------------------------
 
-Aditya Gilra's original implementation of the pyloric pacemaker model of the lobster
-somatogastric ganglion system in the neuroConstruct_alt folder:
+Aditya Gilra's original implementation of the pyloric pacemaker model of the lobster somatogastric ganglion 
+system in the [AdityaGilraMOOSEnC](https://github.com/OpenSourceBrain/PyloricNetwork/tree/master/AdityaGilraMOOSEnC) folder.
 
 The 3 cell network is for fig 3d from :
 Similar network activity from disparate circuit parameters
@@ -35,6 +35,8 @@ J Neurophysiol 90: 3998–4015, 2003.
 The same cell is used as the basis for 3 cells AB_PD, LP and PY with different channel densities,
  connected in the pyloric rhythm generator network specified in Fig 3d of Prinz, Bucher and Marder, 2004 above.
 Differences from the original model: Synapses are thresholded rather than graded.
+
+A Python file which can be used to load the NeuroML into MOOSE is at [pyloric_net_MOOSE.py](https://github.com/OpenSourceBrain/PyloricNetwork/blob/master/AdityaGilraMOOSEnC/pyloric_net_MOOSE.py)
 
 ----------------------------------
 
