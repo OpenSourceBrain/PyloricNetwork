@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<neuroml xmlns="http://www.neuroml.org/schema/neuroml2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2  https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta3.xsd" id="LP">
+<neuroml xmlns="http://www.neuroml.org/schema/neuroml2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2  https://raw.githubusercontent.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta4.xsd" id="LP">
 
     <include href="CaPool_STG.nml"/>
 
@@ -41,9 +41,9 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
             </segment>
 
             <segmentGroup id="Soma" neuroLexId="sao864921383">    <!--
-This group contains an unbranched set of segments, and all of the segmentGroups marked with
-neuroLexId = sao864921383 form a non-overlapping set of all of the segments. 
-These segmentGroups correspond to the 'cables' of NeuroML v1.8.1-->
+                This group contains an unbranched set of segments, and all of the segmentGroups marked with
+                neuroLexId = sao864921383 form a non-overlapping set of all of the segments. 
+                These segmentGroups correspond to the 'cables' of NeuroML v1.8.1. -->
 
                 <member segment="0"/>
             </segmentGroup>
@@ -65,31 +65,28 @@ These segmentGroups correspond to the 'cables' of NeuroML v1.8.1-->
         <biophysicalProperties id="biophys">
 
             <membraneProperties>
-
+                
                 <channelDensity condDensity="0.03 mS_per_cm2" id="H_STG_all" ionChannel="H_STG" ion="h" erev="-20.0 mV"/>
-
+                
                 <channelDensity condDensity="30.0 mS_per_cm2" id="KA_STG_all" ionChannel="KA_STG" ion="k" erev="-80.0 mV"/>
-
+                
                 <channelDensity condDensity="0.0 mS_per_cm2" id="KCa_STG_all" ionChannel="KCa_STG" ion="k" erev="-80.0 mV"/>
-
+                
                 <channelDensity condDensity="50.0 mS_per_cm2" id="Kd_STG_all" ionChannel="Kd_STG" ion="k" erev="-80.0 mV"/>
-
+                
                 <channelDensity condDensity="0.02 mS_per_cm2" id="LeakConductance_all" ionChannel="LeakConductance" erev="-50.0 mV" ion="non_specific"/>
-
+                
                 <channelDensity condDensity="100.0 mS_per_cm2" id="Na_STG_all" ionChannel="Na_STG" ion="na" erev="50.0 mV"/>
-
-                    <!--Reversal potential for ca in CaS_STG will be calculated by Nernst equation from internal & external calcium-->
-
-
-                <channelDensityNernst condDensity="6.0 mS_per_cm2" id="CaS_STG_all" ionChannel="CaS_STG" ion="ca"/>
-
                 
 
-                    <!--Reversal potential for ca in CaT_STG will be calculated by Nernst equation from internal & external calcium-->
+                <!--Reversal potential for ca in CaS_STG will be calculated by Nernst equation from internal & external calcium-->
 
+                <channelDensityNernst condDensity="6.0 mS_per_cm2" id="CaS_STG_all" ionChannel="CaS_STG" ion="ca"/>
+                
+
+                <!--Reversal potential for ca in CaT_STG will be calculated by Nernst equation from internal & external calcium-->
 
                 <channelDensityNernst condDensity="0.0 mS_per_cm2" id="CaT_STG_all" ionChannel="CaT_STG" ion="ca"/>
-
                 
 
                 <spikeThresh value="0 mV"/>

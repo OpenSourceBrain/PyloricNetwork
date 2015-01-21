@@ -27,7 +27,7 @@ else:
     
     nc.generateNeuroML2(projFile, simConfigs)
 
-    extra_files = ['.test.omt', '.test.mep']
+    extra_files = ['.test.*']
     if len(sys.argv)==2 and sys.argv[1] == "-f":
         extra_files.append('LEMS_PyloricPacemakerNetwork.xml')
         extra_files.append('PyloricPacemakerNetwork.net.nml')
