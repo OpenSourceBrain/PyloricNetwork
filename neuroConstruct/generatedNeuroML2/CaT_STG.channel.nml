@@ -5,7 +5,7 @@
 
     <ionChannel id="CaT_STG" conductance="10pS" type="ionChannelHH" species="ca">
 
-        <notes>ChannelML file containing a single Channel description</notes>
+        <notes> Ca T-type (low threshold) conductance; Nernst,Cout=3e-6,z=2</notes>
                 
         <annotation>
             <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
