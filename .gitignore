@@ -25,3 +25,6 @@ AdityaGilraMOOSEnC/generatedNeuroML/
 
 pythonScripts/*.xml
 neuroConstruct*old
+
+neuroConstruct/generatedNeuroML2/LEMS_Test*
+neuroConstruct/generatedNeuroML2/html
