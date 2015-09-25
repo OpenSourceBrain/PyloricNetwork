@@ -10,7 +10,7 @@
     
     <!--Based on synapse in Methods of http://www.nature.com/neuro/journal/v7/n12/abs/nn1352.html-->
     
-    <gradedSynapse id="Glu_3nS" conductance="0nS" delta="5mV" Vth="-35mV" k="0.025per_ms" erev="-70mV"/>
+    <gradedSynapse id="Glu_3nS" conductance="30nS" delta="5mV" Vth="-35mV" k="0.025per_ms" erev="-70mV"/>
     
     <!-- For testing-->
     <linearGradedSynapse id="gs1" conductance="10nS"/>

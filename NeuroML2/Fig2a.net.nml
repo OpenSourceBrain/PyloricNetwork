@@ -33,12 +33,11 @@ Network connection: PD_PY contains 1 individual synaptic connections
     
     <include href="Synapses.nml"/>
     
+    <pulseGenerator id="pulseGen0" delay="0s" duration="0.1s" amplitude="-0.2nA"/>
+    <pulseGenerator id="pulseGen1" delay="0s" duration="1s" amplitude="-0.03nA"/>
+    <pulseGenerator id="pulseGen2" delay="4s" duration="1s" amplitude="-0.2nA"/>
     
     <network id="network_PyloricPacemakerNetwork" type="networkWithTemperature" temperature="10.0 degC">
-
-        
-
-
 
         <population id="AB_PD" component="AB_PD" size="1" />
         <population id="LP" component="LP" size="1" />
@@ -57,11 +56,12 @@ Network connection: PD_PY contains 1 individual synaptic connections
         </population>-->
 
         <continuousProjection id ="proj1" presynapticPopulation="AB_PD" postsynapticPopulation="LP">
-            <continuousConnection id="0" preCell="0" postCell="0" preComponent="silent" postComponent="gs1"/>
+            <continuousConnection id="0" preCell="0" postCell="0" preComponent="silent" postComponent="Glu_3nS"/>
         </continuousProjection>
 
-
-
+        <explicitInput target="AB_PD[0]" input="pulseGen0"/>
+        <explicitInput target="AB_PD[0]" input="pulseGen1"/>
+        <explicitInput target="AB_PD[0]" input="pulseGen2"/>
 
     </network>
 
