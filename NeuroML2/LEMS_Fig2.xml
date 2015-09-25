@@ -1,0 +1,73 @@
+<Lems xmlns="http://www.neuroml.org/lems/0.7.2" 
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xsi:schemaLocation="http://www.neuroml.org/lems/0.7.2  https://raw.github.com/LEMS/LEMS/development/Schemas/LEMS/LEMS_v0.7.2.xsd">
+
+    <Target component="sim1" reportFile="simulator.props" timesFile="time.dat"/>
+
+        <!--Include standard NeuroML 2 ComponentType definitions-->
+
+    <Include file="Cells.xml"/>
+    <Include file="Networks.xml"/>
+    <Include file="Simulation.xml"/>
+
+    
+
+        <!--Include the generated NeuroML 2 files-->
+
+
+        <!--   Channel/synapse files-->
+        
+    <Include file="CaPool_STG.nml"/>
+    <Include file="CaS_STG.channel.nml"/>
+    <Include file="CaT_STG.channel.nml"/>
+    <Include file="H_STG.channel.nml"/>
+    <Include file="KA_STG.channel.nml"/>
+    <Include file="KCa_STG.channel.nml"/>
+    <Include file="Kd_STG.channel.nml"/>
+    <Include file="LeakConductance.channel.nml"/>
+    <Include file="Na_STG.channel.nml"/>
+    
+        <!--   Cell files-->
+        
+    <Include file="AB_PD_2.cell.nml"/>
+    <Include file="LP_2.cell.nml"/>
+    
+        <!--   Network file-->
+    <Include file="Fig2a.net.nml"/>
+    
+
+        <!--Note: this could be: Simulation id="sim1" ... , but Component type="Simulation" ... 
+        is used to allow validation of this file according to the LEMS schema specified above...-->
+    <Component type="Simulation" id="sim1" length="4000.0ms" step="0.025ms" target="network_PyloricPacemakerNetwork">
+        
+        <Display id="AB_PD_v" title="PyloricPacemakerNetwork: Default Simulation Configuration, AB_PD, VOLTAGE" xmin="-100.0" xmax="4100.0" ymin="-104.0" ymax="64.0" timeScale="1ms">
+            <Line id="VOLTAGE-AB_PD_0" timeScale="1ms" quantity="AB_PD/0/AB_PD/v" scale="1 mV" color="#000000"/>
+        </Display>
+    
+        <Display id="GraphWin_14" title="PyloricPacemakerNetwork: Default Simulation Configuration, LP, VOLTAGE" xmin="-100.0" xmax="4100.0" ymin="-104.0" ymax="64.0" timeScale="1ms">
+            <Line id="VOLTAGE-LP_0" timeScale="1ms" quantity="LP/0/LP/v" scale="1 mV" color="#000000"/>
+        </Display>
+    
+    <!--
+        <Display id="GraphWin_0" title="PyloricPacemakerNetwork: Default Simulation Configuration, AB_PD, CaPool_STG:CONC:ca, CaPool_STG:CONC:ca, CaPool_STG:CONC:ca" xmin="-100.0" xmax="1100.0" ymin="-3.0000002E-8" ymax="3.3E-7" timeScale="1ms">
+            <Line id="CaPool_STG_CONC_ca-AB_PD_0" timeScale="1ms" quantity="AB_PD/0/AB_PD/caConc" scale="1 mol_per_cm3" color="#000000"/>
+        
+            <Line id="CaPool_STG_CONC_ca-LP_0" timeScale="1ms" quantity="LP/0/LP/caConc" scale="1 mol_per_cm3" color="#ff0000"/>
+        
+            <Line id="CaPool_STG_CONC_ca-PY_0" timeScale="1ms" quantity="PY/0/PY/caConc" scale="1 mol_per_cm3" color="#0000ff"/>
+        </Display>
+    -->
+        <OutputFile id="AB_PD_v_OF" fileName="AB_PD.dat">
+            <OutputColumn id="v" quantity="AB_PD/0/AB_PD/v"/>
+        </OutputFile>
+    
+        <OutputFile id="LP_v_OF" fileName="LP.dat">
+            <OutputColumn id="v" quantity="LP/0/LP/v"/>
+        </OutputFile>
+    
+    
+    
+    </Component>
+
+
+</Lems>

@@ -32,10 +32,10 @@ def generate_cell(type, number, cond_densities):
     nml_doc = pynml.read_neuroml2_file('../neuroConstruct/generatedNeuroML2/%s.cell.nml'%type)
     cell = nml_doc.cells[0]
     print('Loaded: %s'%cell.id)
-    cell_id = '%s_%i'%(type, number)
-    cell.id = cell_id
-    nml_doc.id = cell_id
-    nml_file = '%s.cell.nml'%cell_id
+    cell_ref = '%s_%i'%(type, number)
+    #cell.id = cell_id
+    nml_doc.id = cell_ref
+    nml_file = '%s.cell.nml'%cell_ref
     
     mp = cell.biophysical_properties.membrane_properties
     

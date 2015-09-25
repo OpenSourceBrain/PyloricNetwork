@@ -1,16 +1,16 @@
 /neuroConstruct/generatedNeuroML2/clean.sh
 /neuroConstruct/wor*
 
-/neuroConstruct/generatedNeuroML2/*.sedml
-/neuroConstruct/generatedNeuroML2/*.dat
-/neuroConstruct/generatedNeuroML2/*.props
-/neuroConstruct/generatedNeuroML2/runsim.sh
-/neuroConstruct/generatedNeuroML2/*.mod
-/neuroConstruct/generatedNeuroML2/*.py
-/neuroConstruct/generatedNeuroML2/*.hoc
-/neuroConstruct/generatedNeuroML2/x86_64
-/neuroConstruct/generatedNeuroML2/*.log
+*.sedml
+*.dat
+*.props
+runsim.sh
+*.mod
+*.hoc
+x86_64
+*.log
 *.bak
+*nrn.py
 *~
 neuroConstruct/generatedNeuroML/README
 temp

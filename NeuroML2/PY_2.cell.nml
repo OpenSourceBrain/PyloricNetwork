@@ -8,7 +8,7 @@
     <include href="Kd_STG.channel.nml"></include>
     <include href="LeakConductance.channel.nml"></include>
     <include href="Na_STG.channel.nml"></include>
-    <cell id="PY_2">
+    <cell id="PY">
         <notes>Stomatogastric Ganglion (STG) neuron
 From: Alternative to Hand-Tuning Conductance-Based Models: Construction and Analysis of Databases of Model Neurons
 Astrid A. Prinz, Cyrus P. Billimoria, and Eve Marder,
