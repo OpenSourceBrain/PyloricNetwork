@@ -32,6 +32,8 @@
     <Include file="AB_PD_2.cell.nml"/>
     <Include file="LP_2.cell.nml"/>
     
+    <Include file="Synapses.nml"/>
+    
         <!--   Network file-->
     <Include file="Fig2a.net.nml"/>
     
@@ -41,11 +43,11 @@
     <Component type="Simulation" id="sim1" length="4000.0ms" step="0.025ms" target="network_PyloricPacemakerNetwork">
         
         <Display id="AB_PD_v" title="PyloricPacemakerNetwork: Default Simulation Configuration, AB_PD, VOLTAGE" xmin="-100.0" xmax="4100.0" ymin="-104.0" ymax="64.0" timeScale="1ms">
-            <Line id="VOLTAGE-AB_PD_0" timeScale="1ms" quantity="AB_PD/0/AB_PD/v" scale="1 mV" color="#000000"/>
+            <Line id="AB_PD" timeScale="1ms" quantity="AB_PD[0]/v" scale="1 mV" color="#000000"/>
         </Display>
     
         <Display id="GraphWin_14" title="PyloricPacemakerNetwork: Default Simulation Configuration, LP, VOLTAGE" xmin="-100.0" xmax="4100.0" ymin="-104.0" ymax="64.0" timeScale="1ms">
-            <Line id="VOLTAGE-LP_0" timeScale="1ms" quantity="LP/0/LP/v" scale="1 mV" color="#000000"/>
+            <Line id="LP" timeScale="1ms" quantity="LP[0]/v" scale="1 mV" color="#000000"/>
         </Display>
     
     <!--
@@ -56,14 +58,14 @@
         
             <Line id="CaPool_STG_CONC_ca-PY_0" timeScale="1ms" quantity="PY/0/PY/caConc" scale="1 mol_per_cm3" color="#0000ff"/>
         </Display>
-    -->
+    
         <OutputFile id="AB_PD_v_OF" fileName="AB_PD.dat">
             <OutputColumn id="v" quantity="AB_PD/0/AB_PD/v"/>
         </OutputFile>
     
         <OutputFile id="LP_v_OF" fileName="LP.dat">
             <OutputColumn id="v" quantity="LP/0/LP/v"/>
-        </OutputFile>
+        </OutputFile>-->
     
     
     

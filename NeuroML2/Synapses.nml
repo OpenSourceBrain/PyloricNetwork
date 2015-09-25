@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<neuroml xmlns="http://www.neuroml.org/schema/neuroml2"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2 ../Schemas/NeuroML2/NeuroML_v2beta4.xsd"
+    id="Synapses">
+    
+    
+    <silentSynapse id="silent"/>
+    
+    <!--Based on synapse in Methods of http://www.nature.com/neuro/journal/v7/n12/abs/nn1352.html-->
+    
+    <gradedSynapse id="Glu_3nS" conductance="0nS" delta="5mV" Vth="-35mV" k="0.025per_ms" erev="-70mV"/>
+    
+    <!-- For testing-->
+    <linearGradedSynapse id="gs1" conductance="10nS"/>
+
+</neuroml>
