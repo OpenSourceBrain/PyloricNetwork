@@ -24,7 +24,7 @@
         <notes>Stomatogastric Ganglion (STG) neuron
 From: Alternative to Hand-Tuning Conductance-Based Models: Construction and Analysis of Databases of Model Neurons
 Astrid A. Prinz, Cyrus P. Billimoria, and Eve Marder,
-J Neurophysiol 90: 3998–4015, 2003.
+J Neurophysiol 90: 3998-4015, 2003.
 
 The AB_PD cell is an STG neuron with channel densities corresponding to AB/PD neuron #2 from Table 2 of:
 Similar network activity from disparate circuit parameters
