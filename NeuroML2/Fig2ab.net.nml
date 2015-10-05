@@ -2,22 +2,7 @@
 <neuroml xmlns="http://www.neuroml.org/schema/neuroml2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2  https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta3.xsd" id="network_PyloricPacemakerNetwork">
 
     <notes>
-
-Network structure (NeuroML 2beta3) for project: PyloricPacemakerNetwork saved with neuroConstruct v1.7.1 on: 14:00:32, 17-Mar-14
-
-Cell Group: AB_PD contains 1 cells
-Cell Group: PY contains 1 cells
-Cell Group: LP contains 1 cells
-
-Network connection: PD_LP contains 1 individual synaptic connections
-Network connection: PY_LP contains 1 individual synaptic connections
-Network connection: AB_PY contains 1 individual synaptic connections
-Network connection: AB_LP contains 1 individual synaptic connections
-Network connection: LP_PY contains 1 individual synaptic connections
-Network connection: LP_ABPD contains 1 individual synaptic connections
-Network connection: PD_PY contains 1 individual synaptic connections
-
-
+Figure 2
     </notes>
 
 
@@ -40,23 +25,22 @@ Network connection: PD_PY contains 1 individual synaptic connections
     <network id="network_PyloricPacemakerNetwork" type="networkWithTemperature" temperature="10.0 degC">
 
         <population id="AB_PD" component="AB_PD" size="1" />
-        <population id="LP" component="LP" size="1" />
-<!--
-        <population id="AB_PD" component="AB_PD" type="populationList" size="1">
-            <instance id="0">
-                <location x="0.0" y="519.615" z="0.0"/>
-            </instance>
-        </population>
-
-
-        <population id="LP" component="LP" type="populationList" size="1">
-            <instance id="0">
-                <location x="-300.0" y="0.0" z="0.0"/>
-            </instance>
-        </population>-->
+        <population id="LP" component="LP" size="5" />
 
         <continuousProjection id ="proj1" presynapticPopulation="AB_PD" postsynapticPopulation="LP">
-            <continuousConnection id="0" preCell="0" postCell="0" preComponent="silent" postComponent="Glu_3nS"/>
+            <continuousConnection id="0" preCell="0" postCell="0" preComponent="silent" postComponent="Glu_0nS"/>
+        </continuousProjection>
+        <continuousProjection id ="proj2" presynapticPopulation="AB_PD" postsynapticPopulation="LP">
+            <continuousConnection id="0" preCell="0" postCell="1" preComponent="silent" postComponent="Glu_3nS"/>
+        </continuousProjection>
+        <continuousProjection id ="proj3" presynapticPopulation="AB_PD" postsynapticPopulation="LP">
+            <continuousConnection id="0" preCell="0" postCell="2" preComponent="silent" postComponent="Glu_10nS"/>
+        </continuousProjection>
+        <continuousProjection id ="proj4" presynapticPopulation="AB_PD" postsynapticPopulation="LP">
+            <continuousConnection id="0" preCell="0" postCell="3" preComponent="silent" postComponent="Glu_30nS"/>
+        </continuousProjection>
+        <continuousProjection id ="proj5" presynapticPopulation="AB_PD" postsynapticPopulation="LP">
+            <continuousConnection id="0" preCell="0" postCell="4" preComponent="silent" postComponent="Glu_100nS"/>
         </continuousProjection>
 
         <explicitInput target="AB_PD[0]" input="pulseGen0"/>

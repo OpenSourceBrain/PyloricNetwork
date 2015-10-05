@@ -35,7 +35,7 @@
     <Include file="Synapses.nml"/>
     
         <!--   Network file-->
-    <Include file="Fig2a.net.nml"/>
+    <Include file="Fig2ab.net.nml"/>
     
 
         <!--Note: this could be: Simulation id="sim1" ... , but Component type="Simulation" ... 
@@ -47,7 +47,11 @@
         </Display>
     
         <Display id="GraphWin_14" title="PyloricPacemakerNetwork: Default Simulation Configuration, LP, VOLTAGE" xmin="-100.0" xmax="5100.0" ymin="-104.0" ymax="64.0" timeScale="1ms">
-            <Line id="LP" timeScale="1ms" quantity="LP[0]/v" scale="1 mV" color="#000000"/>
+            <Line id="LP 0nS" timeScale="1ms" quantity="LP[0]/v" scale="1 mV" color="#000000"/>
+            <Line id="LP 3nS" timeScale="1ms" quantity="LP[1]/v" scale="1 mV" color="#ff0000"/>
+            <Line id="LP 10nS" timeScale="1ms" quantity="LP[2]/v" scale="1 mV" color="#00ff00"/>
+            <Line id="LP 30nS" timeScale="1ms" quantity="LP[3]/v" scale="1 mV" color="#0000ff"/>
+            <Line id="LP 100nS" timeScale="1ms" quantity="LP[4]/v" scale="1 mV" color="#00ffff"/>
         </Display>
     
     <!--
@@ -57,15 +61,19 @@
             <Line id="CaPool_STG_CONC_ca-LP_0" timeScale="1ms" quantity="LP/0/LP/caConc" scale="1 mol_per_cm3" color="#ff0000"/>
         
             <Line id="CaPool_STG_CONC_ca-PY_0" timeScale="1ms" quantity="PY/0/PY/caConc" scale="1 mol_per_cm3" color="#0000ff"/>
-        </Display>
+        </Display>-->
     
         <OutputFile id="AB_PD_v_OF" fileName="AB_PD.dat">
-            <OutputColumn id="v" quantity="AB_PD/0/AB_PD/v"/>
+            <OutputColumn id="v" quantity="AB_PD[0]/v"/>
         </OutputFile>
     
         <OutputFile id="LP_v_OF" fileName="LP.dat">
-            <OutputColumn id="v" quantity="LP/0/LP/v"/>
-        </OutputFile>-->
+            <OutputColumn id="v" quantity="LP[0]/v"/>
+            <OutputColumn id="v" quantity="LP[1]/v"/>
+            <OutputColumn id="v" quantity="LP[2]/v"/>
+            <OutputColumn id="v" quantity="LP[3]/v"/>
+            <OutputColumn id="v" quantity="LP[4]/v"/>
+        </OutputFile>
     
     
     
