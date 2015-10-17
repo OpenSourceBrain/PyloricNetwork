@@ -4,6 +4,8 @@ PyloricPacemakerNetwork.AB_PD_0.electrical.getSimulationTree();
 PyloricPacemakerNetwork.LP_0.electrical.getSimulationTree();
 PyloricPacemakerNetwork.PY_0.electrical.getSimulationTree();
 
+Project.persist();
+
 PyloricPacemakerNetwork.AB_PD_0.electrical.SimulationTree.AB_PD[0].v.setWatched(true);
 PyloricPacemakerNetwork.LP_0.electrical.SimulationTree.LP[0].v.setWatched(true);
 PyloricPacemakerNetwork.PY_0.electrical.SimulationTree.PY[0].v.setWatched(true);
