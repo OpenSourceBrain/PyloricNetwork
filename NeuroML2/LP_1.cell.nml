@@ -43,7 +43,7 @@ Converted to neuroConstruct from details in above two papers by Aditya Gilra, NC
                 <channelDensity id="Kd_STG_all" segmentGroup="all" ion="k" ionChannel="Kd_STG" erev="-80.0 mV" condDensity="75 mS_per_cm2"/>
                 <channelDensity id="LeakConductance_all" segmentGroup="all" ion="non_specific" ionChannel="LeakConductance" erev="-50.0 mV" condDensity="0.02 mS_per_cm2"/>
                 <channelDensity id="Na_STG_all" segmentGroup="all" ion="na" ionChannel="Na_STG" erev="50.0 mV" condDensity="100 mS_per_cm2"/>
-                <channelDensityNernst id="CaS_STG_all" ionChannel="CaS_STG" condDensity="6.0 mS_per_cm2" segmentGroup="all" ion="ca"/>
+                <channelDensityNernst id="CaS_STG_all" ionChannel="CaS_STG" condDensity="8 mS_per_cm2" segmentGroup="all" ion="ca"/>
                 <channelDensityNernst id="CaT_STG_all" ionChannel="CaT_STG" condDensity="0.0 mS_per_cm2" segmentGroup="all" ion="ca"/>
                 <spikeThresh segmentGroup="all" value="0 mV"/>
                 <specificCapacitance segmentGroup="all" value="1.0 uF_per_cm2"/>
