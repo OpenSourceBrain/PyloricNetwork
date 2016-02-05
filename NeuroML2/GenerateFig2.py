@@ -5,9 +5,7 @@ from pyneuroml import pynml
 from matplotlib import pyplot as plt
 import sys
 
-lems_files = {}
-lems_files['a'] = 'LEMS_Fig2a.xml'
-lems_files['b'] = 'LEMS_Fig2b.xml'
+lems_files = {s: 'LEMS_Fig2%s.xml'%s for s in 'abcd'}
 
 def generate_panel(ref):
     example_lems_file = lems_files[ref]
@@ -20,14 +18,12 @@ def generate_panel(ref):
         plots = len(results.keys())-1
         f, a = plt.subplots(plots, sharex=True, sharey=True)
 
-        count = 0
-        for key in results.keys():
-
-            #plt.xlabel('Time (s)')
-            #plt.ylabel('Membrane potential (V)')
-            #plt.grid('on')
-
-            if key != 't':
+	#AB on top
+        a[0].plot(results['t'], results[[k for k in results if 'AB' in k][0]])
+        
+        count = 1
+        for key in sorted(results):
+            if key != 't' and 'AB' not in key:
                 a[count].plot(results['t'],results[key], label=""+key)
                 count+=1
 
@@ -36,5 +32,7 @@ if __name__ == "__main__":
     
     generate_panel('a')
     generate_panel('b')
+    generate_panel('c')
+    generate_panel('d') # need to find "good"initial conditions - bistable
 
     plt.show()
