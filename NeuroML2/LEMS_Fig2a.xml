@@ -29,7 +29,7 @@
     
         <!--   Cell files-->
         
-    <Include file="AB_PD_2.cell.nml"/>
+    <Include file="AB_PD_3.cell.nml"/>
     <Include file="LP_2.cell.nml"/>
     
     <Include file="Synapses.nml"/>
