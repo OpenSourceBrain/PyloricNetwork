@@ -41,7 +41,7 @@
 
         <!--Note: this could be: Simulation id="sim1" ... , but Component type="Simulation" ... 
         is used to allow validation of this file according to the LEMS schema specified above...-->
-    <Component type="Simulation" id="sim1" length="2500.0ms" step="0.025ms" target="network_PyloricPacemakerNetwork">
+    <Component type="Simulation" id="sim1" length="5000.0ms" step="0.025ms" target="network_PyloricPacemakerNetwork">
         
         <Display id="AB_PD_v" title="AB_PD, VOLTAGE" xmin="-100.0" xmax="2600.0" ymin="-104.0" ymax="64.0" timeScale="1ms">
             <Line id="VOLTAGE-AB_PD_0" timeScale="1ms" quantity="AB_PD[0]/v" scale="1 mV" color="#000000"/>
