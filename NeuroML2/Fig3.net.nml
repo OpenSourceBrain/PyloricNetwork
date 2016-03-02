@@ -35,6 +35,8 @@ Network connection: PD_PY contains 1 individual synaptic connections
     <include href="LP_3.cell.nml"/>
     <include href="PY_1.cell.nml"/>
     
+    <include href="Synapses.nml"/>
+    
     <network id="network_PyloricPacemakerNetwork" type="networkWithTemperature" temperature="10.0 degC">
 
         
