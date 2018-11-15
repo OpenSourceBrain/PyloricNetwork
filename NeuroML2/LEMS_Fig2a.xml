@@ -10,34 +10,10 @@
     <Include file="Networks.xml"/>
     <Include file="Simulation.xml"/>
 
+    <!--Include the generated NeuroML 2 files-->
     
-
-        <!--Include the generated NeuroML 2 files-->
-
-
-        <!--   Channel/synapse files-->
-        
-    <Include file="CaPool_STG.nml"/>
-    <Include file="CaS_STG.channel.nml"/>
-    <Include file="CaT_STG.channel.nml"/>
-    <Include file="H_STG.channel.nml"/>
-    <Include file="KA_STG.channel.nml"/>
-    <Include file="KCa_STG.channel.nml"/>
-    <Include file="Kd_STG.channel.nml"/>
-    <Include file="LeakConductance.channel.nml"/>
-    <Include file="Na_STG.channel.nml"/>
+    <Include file="Fig2a.net.nml"/>
     
-        <!--   Cell files-->
-        
-    <Include file="AB_PD_3.cell.nml"/>
-    <Include file="LP_2.cell.nml"/>
-    
-    <Include file="Synapses.nml"/>
-    
-        <!--   Network file-->
-    <Include file="Fig2ab.net.nml"/>
-    
-
         <!--Note: this could be: Simulation id="sim1" ... , but Component type="Simulation" ... 
         is used to allow validation of this file according to the LEMS schema specified above...-->
     <Component type="Simulation" id="sim1" length="5000.0ms" step="0.025ms" target="network_PyloricPacemakerNetwork">

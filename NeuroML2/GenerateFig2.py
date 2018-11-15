@@ -10,6 +10,7 @@ lems_files = {s: 'LEMS_Fig2%s.xml'%s for s in 'abcd'}
 def generate_panel(ref):
     example_lems_file = lems_files[ref]
 
+    print("Running file: %s"%example_lems_file)
     results = pynml.run_lems_with_jneuroml(example_lems_file, nogui=True, load_saved_data=True)
     
     if not '-nogui' in sys.argv:

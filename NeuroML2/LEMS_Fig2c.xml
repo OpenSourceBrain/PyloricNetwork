@@ -12,7 +12,7 @@
 
     <!--Include the generated NeuroML 2 files-->
 
-    <Include file="Fig2b.net.nml"/>
+    <Include file="Fig2c.net.nml"/>
     
         <!--Note: this could be: Simulation id="sim1" ... , but Component type="Simulation" ... 
         is used to allow validation of this file according to the LEMS schema specified above...-->
@@ -22,24 +22,24 @@
             <Line id="AB_PD" timeScale="1ms" quantity="AB_PD[0]/v" scale="1 mV" color="#000000"/>
         </Display>
     
-        <Display id="GraphWin_14" title="PyloricPacemakerNetwork: Default Simulation Configuration, LP, VOLTAGE" xmin="-100.0" xmax="5100.0" ymin="-104.0" ymax="64.0" timeScale="1ms">
-            <Line id="LP 0nS" timeScale="1ms" quantity="LP[0]/v" scale="1 mV" color="#000000"/>
-            <Line id="LP 3nS" timeScale="1ms" quantity="LP[1]/v" scale="1 mV" color="#ff0000"/>
-            <Line id="LP 10nS" timeScale="1ms" quantity="LP[2]/v" scale="1 mV" color="#00ff00"/>
-            <Line id="LP 30nS" timeScale="1ms" quantity="LP[3]/v" scale="1 mV" color="#0000ff"/>
-            <Line id="LP 100nS" timeScale="1ms" quantity="LP[4]/v" scale="1 mV" color="#00ffff"/>
+        <Display id="GraphWin_14" title="PyloricPacemakerNetwork: Default Simulation Configuration, PY, VOLTAGE" xmin="-100.0" xmax="5100.0" ymin="-104.0" ymax="64.0" timeScale="1ms">
+            <Line id="PY 0nS" timeScale="1ms" quantity="PY[0]/v" scale="1 mV" color="#000000"/>
+            <Line id="PY 3nS" timeScale="1ms" quantity="PY[1]/v" scale="1 mV" color="#ff0000"/>
+            <Line id="PY 10nS" timeScale="1ms" quantity="PY[2]/v" scale="1 mV" color="#00ff00"/>
+            <Line id="PY 30nS" timeScale="1ms" quantity="PY[3]/v" scale="1 mV" color="#0000ff"/>
+            <Line id="PY 100nS" timeScale="1ms" quantity="PY[4]/v" scale="1 mV" color="#00ffff"/>
         </Display>
     
         <OutputFile id="AB_PD_v_OF" fileName="AB_PD_Fig2b.dat">
             <OutputColumn id="v" quantity="AB_PD[0]/v"/>
         </OutputFile>
     
-        <OutputFile id="LP_v_OF" fileName="LP_Fig2b.dat">
-            <OutputColumn id="v" quantity="LP[0]/v"/>
-            <OutputColumn id="v" quantity="LP[1]/v"/>
-            <OutputColumn id="v" quantity="LP[2]/v"/>
-            <OutputColumn id="v" quantity="LP[3]/v"/>
-            <OutputColumn id="v" quantity="LP[4]/v"/>
+        <OutputFile id="PY_v_OF" fileName="PY_Fig2c.dat">
+            <OutputColumn id="v" quantity="PY[0]/v"/>
+            <OutputColumn id="v" quantity="PY[1]/v"/>
+            <OutputColumn id="v" quantity="PY[2]/v"/>
+            <OutputColumn id="v" quantity="PY[3]/v"/>
+            <OutputColumn id="v" quantity="PY[4]/v"/>
         </OutputFile>
     
     
