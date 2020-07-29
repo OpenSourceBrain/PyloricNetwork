@@ -24,7 +24,7 @@ env:
 
 install: 
     - pip install git+https://github.com/OpenSourceBrain/osb-model-validation
-    - pip install future pandas matplotlib scipy
+    - pip install future pandas matplotlib scipy bokeh
 
 script:
     - omv all -V
