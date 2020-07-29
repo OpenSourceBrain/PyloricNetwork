@@ -25,7 +25,7 @@ env:
 install: 
     - pip install git+https://github.com/OpenSourceBrain/osb-model-validation    
     - pip install matplotlib>=2.2.5 # This is more because Matplotlib v2.x is required...
-    - pip install future pandas matplotlib-scalebar bokeh
+    - pip install future pandas matplotlib-scalebar bokeh scipy
 
 script:
     - omv all -V
