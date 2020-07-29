@@ -5,7 +5,6 @@ dist: xenial
 addons:
   apt:
     packages:
-    - python-matplotlib 
     - python-tk
     - python-numpy 
     - python-scipy 
@@ -26,7 +25,7 @@ env:
 
 install: 
     - pip install git+https://github.com/OpenSourceBrain/osb-model-validation
-    - pip install future pandas
+    - pip install future pandas matplotlib
 
 script:
     - omv all -V
