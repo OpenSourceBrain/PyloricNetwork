@@ -7,7 +7,6 @@ addons:
     packages:
     - python-tk
     - python-numpy 
-    - python-scipy 
     - python-lxml
     - python-tornado
     - python-tables
@@ -25,7 +24,7 @@ env:
 
 install: 
     - pip install git+https://github.com/OpenSourceBrain/osb-model-validation
-    - pip install future pandas matplotlib
+    - pip install future pandas matplotlib scipy
 
 script:
     - omv all -V
