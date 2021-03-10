@@ -50,7 +50,7 @@ official journal of the Society for Neuroscience, 23(3), 943–54.
 Retrieved from http://www.ncbi.nlm.nih.gov/pubmed/12574423
 
 
-[![Build Status](https://travis-ci.org/OpenSourceBrain/PyloricNetwork.svg?branch=master)](https://travis-ci.org/OpenSourceBrain/PyloricNetwork)
+[![Build Status](https://travis-ci.com/OpenSourceBrain/PyloricNetwork.svg?branch=master)](https://travis-ci.com/OpenSourceBrain/PyloricNetwork)
 
 
 ### Reusing this model
