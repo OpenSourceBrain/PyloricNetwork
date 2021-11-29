@@ -1,5 +1,6 @@
 Pyloric Pacemaker Network
 =========================
+[![Continuous build using OMV](https://github.com/OpenSourceBrain/PyloricNetwork/actions/workflows/omv-ci.yml/badge.svg)](https://github.com/OpenSourceBrain/PyloricNetwork/actions/workflows/omv-ci.yml)
 
 Implementation of the pyloric pacemaker network of the lobster stomatogastric ganglion system of Prinz, Marder, et al.
 
@@ -49,7 +50,6 @@ inputs to oscillatory neurons. The Journal of neuroscience : the
 official journal of the Society for Neuroscience, 23(3), 943–54.
 Retrieved from http://www.ncbi.nlm.nih.gov/pubmed/12574423
 
-[![Build Status](https://travis-ci.com/OpenSourceBrain/PyloricNetwork.svg?branch=master)](https://travis-ci.com/OpenSourceBrain/PyloricNetwork)
 
 ### Reusing this model
 
